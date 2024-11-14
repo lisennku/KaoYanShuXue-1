@@ -103,7 +103,7 @@
 
 > - 函数$f$上不同点的切线，具有不同斜率，也即，切线的==斜率==是关于$x$的函数，这个函数称为$f$的导函数，记为$f^{\prime}$
 >
-> - 设$\Delta x$是$x$的一个增量，若极限值
+> - 设$\Delta x$是$x$的一个变化，若极限值
 >
 >     $f^{\prime}(x) = \displaystyle \lim_{\Delta x \to 0} \frac {f(x+\Delta x) - f(x)} {\Delta x}$
 >
@@ -112,6 +112,9 @@
 $f^{\prime}$可以有不同写法：
 
 - $f^{\prime}(x) = \frac {dy} {dx}$
+    - $dx$和$dy$表示$x$和$y$中十分微小的变化
+    - 量$\frac {dy} {dx}$不是一个分数，他实际上表示的是当$\Delta x \to 0$时，$\frac {\Delta y} {\Delta x}$的==极限==
+
 - $f^{\prime}(x) = \frac {df(x)} {dx}$
 
 ### 2.2.1 可导判断
