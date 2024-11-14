@@ -133,7 +133,7 @@ $f^{\prime}$可以有不同写法：
 
 - 判断函数$f(x) = |x|$在$x=0$处是否可导
 
-    ![4ec420c50065ba4919dff55827778cb](<chap 5 连续性和可导性.assets/4ec420c50065ba4919dff55827778cb.jpg>)
+    <img src="chap 5 连续性和可导性.assets/4ec420c50065ba4919dff55827778cb.jpg" alt="4ec420c50065ba4919dff55827778cb" style="zoom:33%;" />
 
 # 3. 可导性和连续性
 
@@ -141,4 +141,4 @@ $f^{\prime}$可以有不同写法：
 >
 > 也即，==可导必连续，连续未必可导==
 
-![e011fc22e5dd8ec08a4265b3134c67c](<chap 5 连续性和可导性.assets/e011fc22e5dd8ec08a4265b3134c67c.jpg>)
+<img src="chap 5 连续性和可导性.assets/e011fc22e5dd8ec08a4265b3134c67c.jpg" alt="e011fc22e5dd8ec08a4265b3134c67c" style="zoom: 33%;" />

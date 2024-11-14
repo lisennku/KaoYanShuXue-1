@@ -51,7 +51,7 @@
 - $cos$、$sec$是偶函数
     - ![alt text](<chap 2 三角学回顾.assets/image-20241111151433635.png>)
     - ![alt text](<chap 2 三角学回顾.assets/image-20241111151446651.png>)
-    - ![image-20241111151516484](<chap 2 三角学回顾.assets/image-20241111151516484.png>)
+    - <img src="chap 2 三角学回顾.assets/image-20241111151516484.png" alt="image-20241111151516484" style="zoom: 80%;" />
     - ![image-20241111151744395](<chap 2 三角学回顾.assets/image-20241111151744395.png>)
     - ![image-20241111151752508](<chap 2 三角学回顾.assets/image-20241111151752508.png>)
     - ![image-20241111151759155](<chap 2 三角学回顾.assets/image-20241111151759155.png>)
@@ -96,7 +96,7 @@
 
     - $cos(\alpha + \beta) = cos(\alpha)cos(\beta) - sin(\alpha)sin(\beta)$
     - 推导过程
-        - ![baeb959cd696afe9c888f38b4866829](<chap 2 三角学回顾.assets/baeb959cd696afe9c888f38b4866829.jpg>)
+        - <img src="chap 2 三角学回顾.assets/baeb959cd696afe9c888f38b4866829.jpg" alt="baeb959cd696afe9c888f38b4866829" style="zoom:33%;" />
 
 - 差公式
 
@@ -122,7 +122,7 @@
 - 正切： $\tan\left(\frac{\theta}{2}\right) = \frac{1 - \cos(\theta)}{\sin(\theta)} = \frac{\sin(\theta)}{1 + \cos(\theta)}$
 
 - 证明过程
-    - ![12aa1aec4f87cf02ca9fc14e68476bf](<chap 2 三角学回顾.assets/12aa1aec4f87cf02ca9fc14e68476bf.jpg>)
+    - <img src="chap 2 三角学回顾.assets/12aa1aec4f87cf02ca9fc14e68476bf.jpg" alt="12aa1aec4f87cf02ca9fc14e68476bf" style="zoom:33%;" />
 
 
 

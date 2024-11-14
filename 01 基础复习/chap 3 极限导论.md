@@ -83,7 +83,7 @@
 >
 > 那么$h(x)$在点$c$附近也有极限，并且极限是$L$
 
-![38895cf5646657a075bd1cd74ae6873](<chap 3 极限导论.assets/38895cf5646657a075bd1cd74ae6873.jpg>)
+<img src="chap 3 极限导论.assets/38895cf5646657a075bd1cd74ae6873.jpg" alt="38895cf5646657a075bd1cd74ae6873" style="zoom: 33%;" />
 
 # 4. 其他性质
 
@@ -127,7 +127,7 @@
 >
 > 对于任意的实数$a, b$，有$|a+b| \leq |a| + |b|$
 
-![017f98181d866a5f82da0add4b207f1](<chap 3 极限导论.assets/017f98181d866a5f82da0add4b207f1.jpg>)
+<img src="chap 3 极限导论.assets/017f98181d866a5f82da0add4b207f1.jpg" alt="017f98181d866a5f82da0add4b207f1" style="zoom:33%;" />
 
 
 
