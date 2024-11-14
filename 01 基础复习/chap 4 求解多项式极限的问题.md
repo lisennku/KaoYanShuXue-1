@@ -26,7 +26,7 @@
         - 左极限为$-\infty$，右极限为$\infty$，则双侧极限为不存在 Does Not Exist DNF 
         - 左极限为$\infty$，右极限为$-\infty$，则双侧极限为不存在 Does Not Exist DNF 
 
-        ![image-20241112172050554](<第四章 求解多项式极限的问题.assets/image-20241112172050554.png>)
+        ![image-20241112172050554](<chap 4 求解多项式极限的问题.assets/image-20241112172050554.png>)
 
 # 2. $x \to a$时涉及平方根的函数
 

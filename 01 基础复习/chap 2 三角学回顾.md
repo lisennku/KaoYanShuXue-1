@@ -16,7 +16,7 @@
   - 记弧度为$\theta$，度为$d$，则有
     - $\theta = d \times  {\frac {\pi} {180}}$
     - $d = \theta \times \frac {180} {\pi}$
-    - ![image-20241111145125301](<第二章 三角学回顾.assets/image-20241111145125301.png>)
+    - ![image-20241111145125301](<chap 2 三角学回顾.assets/image-20241111145125301.png>)
 
 ## 1.2 基本三角函数 $[0, \frac {\pi} 2]$
 
@@ -49,12 +49,12 @@
 - 三角函数的函数图像是周期性的，其中$sin$、$cos$、$csc$、$sec$是以$2\pi$为周期的函数，$tan$、$cot$是以$\pi$为周期的函数
 - $sin$、$csc$、$tan$、$cot$是奇函数
 - $cos$、$sec$是偶函数
-    - ![alt text](<第二章 三角学回顾.assets/image-20241111151433635.png>)
-    - ![alt text](<第二章 三角学回顾.assets/image-20241111151446651.png>)
-    - ![image-20241111151516484](<第二章 三角学回顾.assets/image-20241111151516484.png>)
-    - ![image-20241111151744395](<第二章 三角学回顾.assets/image-20241111151744395.png>)
-    - ![image-20241111151752508](<第二章 三角学回顾.assets/image-20241111151752508.png>)
-    - ![image-20241111151759155](<第二章 三角学回顾.assets/image-20241111151759155.png>)
+    - ![alt text](<chap 2 三角学回顾.assets/image-20241111151433635.png>)
+    - ![alt text](<chap 2 三角学回顾.assets/image-20241111151446651.png>)
+    - ![image-20241111151516484](<chap 2 三角学回顾.assets/image-20241111151516484.png>)
+    - ![image-20241111151744395](<chap 2 三角学回顾.assets/image-20241111151744395.png>)
+    - ![image-20241111151752508](<chap 2 三角学回顾.assets/image-20241111151752508.png>)
+    - ![image-20241111151759155](<chap 2 三角学回顾.assets/image-20241111151759155.png>)
 
 ## 1.6 三角恒等式
 
@@ -96,7 +96,7 @@
 
     - $cos(\alpha + \beta) = cos(\alpha)cos(\beta) - sin(\alpha)sin(\beta)$
     - 推导过程
-        - ![baeb959cd696afe9c888f38b4866829](<第二章 三角学回顾.assets/baeb959cd696afe9c888f38b4866829.jpg>)
+        - ![baeb959cd696afe9c888f38b4866829](<chap 2 三角学回顾.assets/baeb959cd696afe9c888f38b4866829.jpg>)
 
 - 差公式
 
@@ -122,7 +122,7 @@
 - 正切： $\tan\left(\frac{\theta}{2}\right) = \frac{1 - \cos(\theta)}{\sin(\theta)} = \frac{\sin(\theta)}{1 + \cos(\theta)}$
 
 - 证明过程
-    - ![12aa1aec4f87cf02ca9fc14e68476bf](<第二章 三角学回顾.assets/12aa1aec4f87cf02ca9fc14e68476bf.jpg>)
+    - ![12aa1aec4f87cf02ca9fc14e68476bf](<chap 2 三角学回顾.assets/12aa1aec4f87cf02ca9fc14e68476bf.jpg>)
 
 
 
