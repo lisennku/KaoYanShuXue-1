@@ -95,6 +95,8 @@
     - $sin(\alpha + \beta) = sin(\alpha)cos(\beta) + cos(\alpha)sin(\beta)$
 
     - $cos(\alpha + \beta) = cos(\alpha)cos(\beta) - sin(\alpha)sin(\beta)$
+    - $tan(\alpha + \beta) = \frac{ tan(\alpha) + tan(\beta)}{1 - tan(\alpha)tan(\beta)}$
+
     - 推导过程
         - <img src="chap 2 三角学回顾.assets/baeb959cd696afe9c888f38b4866829.jpg" alt="baeb959cd696afe9c888f38b4866829" style="zoom:33%;" />
 
@@ -103,6 +105,7 @@
     - $sin(\alpha - \beta) = sin(\alpha)cos(\beta) + cos(\alpha)sin(\beta)$
 
     - $cos(\alpha - \beta) = cos(\alpha)cos(\beta) + sin(\alpha)sin(\beta)$
+    - $tan(\alpha - \beta) = \frac{ tan(\alpha) - tan(\beta)}{1 + tan(\alpha)tan(\beta)}$
     - 通过$sin(\alpha - \beta) = sin(\alpha + (- \beta))$和$cos(\alpha - \beta) = cos(\alpha + (- \beta))$并结合$sin/cos$奇偶性即可推导出
 
 ### 1.6.5 倍角公式
