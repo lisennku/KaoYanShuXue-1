@@ -113,7 +113,15 @@
 
 - 解<img src="chap 6 求解微分问题.assets/dfcc1455246ac58451fe2fe0f21560c.jpg" alt="dfcc1455246ac58451fe2fe0f21560c" style="zoom:33%;" />
 
-    
+# 5. 导数伪装的极限
+
+针对于虚拟变量出现在分母的场景，有可能是求导公式伪装的极限
+
+- 例 求$\displaystyle \lim_{h \to 0}\frac {\sqrt[5] {32 + h} - 2} h$
+
+    ![image-20241121091155546](<chap 6 求解微分问题.assets/image-20241121091155546.png>)
+
+  
 
 
 
