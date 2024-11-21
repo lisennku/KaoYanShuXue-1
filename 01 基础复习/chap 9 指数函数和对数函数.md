@@ -166,4 +166,70 @@
 
     <img src="chap 9 指数函数和对数函数.assets/image-20241121140953936.png" alt="image-20241121140953936" style="zoom:67%;" />
 
-    
+
+# 5. 双曲函数
+
+- 双曲函数
+
+    - 正弦双曲函数
+        - $sinh(x) = \frac {e^x - e^{-x}} 2$
+    - 余弦双曲函数
+        - $cosh(x) = \frac {e^x + e^{-x}} 2$
+    - 正割双曲函数
+        - $sech(x) = \frac 2 {e^x + e^{-x}} $
+    - 余割双曲函数
+        - $csch(x) = \frac 2 {e^x - e^{-x}}$
+    - 正切双曲函数
+        - $tanh(x) = \frac {e^x - e^{-x}} {e^x + e^{-x}}$
+    - 余切双曲函数
+        - $coth(x) = \frac {e^x + e^{-x}} {e^x - e^{-x}}$
+
+- 双曲函数等式
+
+    - $cosh^2(x) - sinh^2(x) = 1$
+    - $1 - tanh^2(x) = sech^2(x)$
+
+- 双曲函数导数
+
+    - 正弦双曲函数
+
+        - $\frac d {dx}sinh(x) = cosh(x)$
+
+    - 余弦双曲函数
+
+        - $\frac d {dx}cosh(x) = sinh(x)$
+
+    - 正割双曲函数
+
+        - $\frac d {dx}sech(x) = -sech(x)tanh(x)$
+
+    - 余割双曲函数
+
+        - $\frac d {dx}csch(x) = -csch(x)coth(x)$
+
+    - 正切双曲函数
+
+        - $\frac d {dx}tanh(x) = sech^2(x)$
+
+    - 余切双曲函数
+
+        - $ \frac d {dx}coth(x)=-csch^2(x)$
+
+    - 证明过程
+
+        <img src="chap 9 指数函数和对数函数.assets/cfba1b61d6436cbb565b13095929ec01.jpg" alt="cfba1b61d6436cbb565b13095929ec01" style="zoom: 33%;" />
+
+- 双曲函数图像
+
+    - 正弦双曲函数
+        - <img src="chap 9 指数函数和对数函数.assets/image-20241121153104420.png" alt="image-20241121153104420" style="zoom:50%;" />
+    - 余弦双曲函数
+        - <img src="chap 9 指数函数和对数函数.assets/image-20241121153044695.png" alt="image-20241121153044695" style="zoom:50%;" />
+    - 正割双曲函数
+        - ![image-20241121153158098](<chap 9 指数函数和对数函数.assets/image-20241121153158098.png>)
+    - 余割双曲函数
+        - ![image-20241121153209921](<chap 9 指数函数和对数函数.assets/image-20241121153209921.png>)
+    - 正切双曲函数
+        - ![image-20241121153128904](<chap 9 指数函数和对数函数.assets/image-20241121153128904.png>)
+    - 余切双曲函数
+        - ![image-20241121153146106](<chap 9 指数函数和对数函数.assets/image-20241121153146106.png>)
