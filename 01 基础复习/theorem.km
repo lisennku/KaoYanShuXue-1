@@ -1,0 +1,96 @@
+{
+    "root": {
+        "data": {
+            "id": "d5vzab0e6so0",
+            "created": 1732610847263,
+            "text": "数学定理"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d5vzaex1olc0",
+                    "created": 1732610855768,
+                    "text": "介值定理",
+                    "layout_mind_offset": {
+                        "x": 0,
+                        "y": 11
+                    },
+                    "expandState": "expand",
+                    "note": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d5vzcij2uc00",
+                            "created": 1732611020358,
+                            "text": "设函数f(x)在闭区间[a, b]上连续，且f(a) ≠ f(b)，若f(a) = A，f(b) = B，则对于A与B之间的任一个数C，在开区间(a, b)内，至少有一个点c，使得\nf(c) = C  a < c < b",
+                            "note": "$x$"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d5vzaq4wafs0",
+                    "created": 1732610880187,
+                    "text": "夹逼定理",
+                    "layout_mind_offset": {
+                        "x": 2,
+                        "y": -120
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d5vzb8pls9c0",
+                            "created": 1732610920621,
+                            "text": "求极限"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d5vzboqalpk0",
+                    "created": 1732610955491,
+                    "text": "罗尔定理",
+                    "layout_mind_offset": {
+                        "x": 452,
+                        "y": 78
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d5vzsd4l6ug0",
+                            "created": 1732612262425,
+                            "text": "如果函数f在闭区间[a,b]内连续，在开区间(a, b)内可导，如果f(a)=f(b)，则在开区间a, b)内至少存在一点cc，使得f′(c)=0",
+                            "layout_right_offset": {
+                                "x": 842,
+                                "y": 7
+                            }
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d5vzbso94hk0",
+                    "created": 1732610964075,
+                    "text": "topic",
+                    "layout_mind_offset": {
+                        "x": 430,
+                        "y": 88
+                    }
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
