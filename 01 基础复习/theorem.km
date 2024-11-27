@@ -57,8 +57,8 @@
                     "created": 1732610955491,
                     "text": "罗尔定理",
                     "layout_mind_offset": {
-                        "x": 452,
-                        "y": 78
+                        "x": 5,
+                        "y": -61
                     }
                 },
                 "children": [
@@ -66,10 +66,10 @@
                         "data": {
                             "id": "d5vzsd4l6ug0",
                             "created": 1732612262425,
-                            "text": "如果函数f在闭区间[a,b]内连续，在开区间(a, b)内可导，如果f(a)=f(b)，则在开区间a, b)内至少存在一点cc，使得f′(c)=0",
+                            "text": "如果函数f在闭区间[a,b]内连续，在开区间(a, b)内可导，如果f(a)=f(b)，则在开区间a, b)内至少存在一点c，使得f′(c)=0",
                             "layout_right_offset": {
-                                "x": 842,
-                                "y": 7
+                                "x": 2.7500199861823944,
+                                "y": -1.7499998696148396
                             }
                         },
                         "children": []
@@ -80,11 +80,88 @@
                 "data": {
                     "id": "d5vzbso94hk0",
                     "created": 1732610964075,
+                    "text": "中值定理",
+                    "layout_mind_offset": {
+                        "x": 6,
+                        "y": -64
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d5wl6bbrj4w0",
+                            "created": 1732672598912,
+                            "text": "如果函数f在闭区间[a, b]内连续，在开区间(a, b)内可导,则在开区间(a, b)内至少存在一点c，使得f'(c) = ( f(b)-f(a) )/ (b - a)"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d5wma3t9sm80",
+                            "created": 1732675717123,
+                            "text": "推论1：\n如果对于定义域(a, b)内所有的x，都有f`(x)=0,那么函数f在开区间(a, b)内为常数函数"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d5wmah7cbb40",
+                            "created": 1732675746272,
+                            "text": "推论2：\n如果对于任意实数x都有f′(x)=g′(x)，则有f(x) = g(x) + C"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d5wmauuf5s80",
+                            "created": 1732675775965,
+                            "text": "推论3：\n如果函数f的导函数始终为正，那么该函数为增函数，如果始终为负，那么该函数为减函数"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d5wl6cpo1c80",
+                    "created": 1732672601929,
                     "text": "topic",
                     "layout_mind_offset": {
-                        "x": 430,
-                        "y": 88
+                        "x": -392,
+                        "y": 85
                     }
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "d5wl6i4wukg0",
+                    "created": 1732672613735,
+                    "text": "topic"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "d5wl6izrmfs0",
+                    "created": 1732672615601,
+                    "text": "topic"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "d5wl6jmxsbk0",
+                    "created": 1732672617002,
+                    "text": "topic"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "d5wl6k5d3jc0",
+                    "created": 1732672618116,
+                    "text": "topic"
                 },
                 "children": []
             }
