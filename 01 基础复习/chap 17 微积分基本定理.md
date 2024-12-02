@@ -169,10 +169,62 @@
 - 计算定积分
 
     - $\displaystyle \int_{-1}^2 x^4dx$
+    
+        - $$
+            \displaystyle
+            \begin{aligned} \\
+            & \int_{-1}^{2}x^4dx \\
+            & = \frac 1 5 x^5 \bigg |_{-1}^2 \\
+            & = \frac {33} 5 \\
+            \end{aligned}
+            $$
+    
     - $\displaystyle \int_{-e^2}^{-1} \frac 4 x dx$
+    
+        - $$
+            \displaystyle
+            \begin{aligned}
+            & \int_{-e^2}^{-1} \frac 4 x dx \\
+            & = 4ln(|x|) \bigg |_{-e^2}^{-1} \\
+            & = 4ln(|-1|) - 4ln(|-e^2|) \\
+            & = -8
+            \end{aligned}
+            $$
+    
     - $\displaystyle \int_0^{\pi/3} \big(sec^2(x)-5sin(\frac x 2)\big) dx$
+    
+        - $$
+            \displaystyle
+            \begin{aligned} \\ 
+            & \int_0^{\pi/3} \big(sec^2(x)-5sin(\frac x 2)\big) dx \\
+            & = (tan(x) + 10cos(\frac x 2)) \bigg|_0^{\frac \pi 3} \\ 
+            & = (tan(\frac \pi 3) + 10cos(\frac {\frac \pi 3} 2)) - (tan(0) + 10cos(0)) \\
+            & = 6\sqrt{3} - 10
+            \end{aligned}
+            $$
+    
     - $\displaystyle \int_4^9 \frac 1 {x\sqrt{x}} dx$
+    
+        - $$
+            \displaystyle
+            \begin{aligned} \\
+            & \int_4^9 \frac 1 {x\sqrt{x}} dx \\
+            & = \int_4^9 x^{- \frac 3 2}dx \\
+            & = -2x^{-\frac 1 2} \bigg |_4^9 \\ 
+            & = \frac 1 3
+            \end{aligned}
+            $$
+    
     - $\displaystyle \int_0^{1/6} \frac 1 {\sqrt{1-9x^2}} dx$
+    
+        - $$
+            \displaystyle
+            \begin{aligned} \\
+            & \int_0^{1/6} \frac 1 {\sqrt{1-9x^2}} dx \\
+            & = \frac 1 3 sin^{-1}(3x) \bigg |_0^{1/6} \\
+            & = \frac {\pi} {18}
+            \end{aligned}
+            $$
 
 
 
