@@ -23,8 +23,8 @@
 
         - 左极限为$\infty$，右极限为$\infty$，则双侧极限为$\infty$
         - 左极限为$-\infty$，右极限为$-\infty$，则双侧极限为$-\infty$
-        - 左极限为$-\infty$，右极限为$\infty$，则双侧极限为不存在 Does Not Exist DNF 
-        - 左极限为$\infty$，右极限为$-\infty$，则双侧极限为不存在 Does Not Exist DNF 
+        - 左极限为$-\infty$，右极限为$\infty$，则双侧极限为不存在 Does Not Exist DNE
+        - 左极限为$\infty$，右极限为$-\infty$，则双侧极限为不存在 Does Not Exist DNE
 
         ![image-20241112172050554](<chap 4 求解多项式极限的问题.assets/image-20241112172050554.png>)
 
