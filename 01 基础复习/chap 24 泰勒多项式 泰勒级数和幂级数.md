@@ -2,7 +2,7 @@
 
 > <font size=4>**泰勒近似定理**</font>
 >
-> <font color=blue size=4>若$f$在$x=a$处光滑，则在所有次数为$N$或者更低次数的多项式中，==在$x=a$附近时==，==最近似于==$f(x)$的多项式是</font>
+> <font color=blue size=4>若==$f$在$x=a$处光滑==，则在所有次数为$N$或者更低次数的多项式中，==在$x=a$附近时==，==最近似于==$f(x)$的多项式是</font>
 >
 > <font color=blue size=4>$P_N(x)=f(a) + f^{\prime}(a)(x-a) + \frac{f^{\prime\prime}(a) } {2}(x-a)^2 + \dots + \frac {f^N(a)}{N!}(x-a)^N$</font>
 >
