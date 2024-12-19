@@ -255,8 +255,8 @@
     & e^x = 1 + x + \frac 1 2 x^2 + \frac 1 {3!} x^3 + \dots\\
     & sin(x) = x - \frac 1 {3!}x^3 + \frac 1 {5!}x^5+\dots\\
     & \therefore e^x-1-sin(x) = x + \frac 1 2 x^2 + \frac 1 {3!} x^3 \dots - (x - \frac 1 {3!}x^3 + \frac 1 {5!}x^5+\dots)～\frac {x^2} 2\\
-    & sin(x)(e^x-1)
+    & sin(x)(e^x-1) ～ x \times x - x^2\\
+    & \therefore \lim_{x \to 0} \bigg(\frac 1 {sin(x)} - \frac 1 {e^x-1}\bigg) = \frac 1 2
     \end{align*}
     $$
-    
 
