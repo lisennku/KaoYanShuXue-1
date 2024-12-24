@@ -11,3 +11,7 @@
 <img src="chap 1 课后练习.assets/3021b320ea06f6bedb0a4c0b0e37175.jpg" alt="3021b320ea06f6bedb0a4c0b0e37175" style="zoom:50%;" />
 
 <img src="chap 1 课后练习.assets/61b13dff0516b14c2ba0eaccbe0f963.jpg" alt="61b13dff0516b14c2ba0eaccbe0f963" style="zoom:50%;" />
+
+<img src="chap 1 课后练习.assets/3d19916ae03ce900350e99110e17c4fb.jpg" alt="3d19916ae03ce900350e99110e17c4fb" style="zoom:50%;" />
+
+<img src="chap 1 课后练习.assets/294ed3b92033771f44a1fef2e4ff944c.jpg" alt="294ed3b92033771f44a1fef2e4ff944c" style="zoom:50%;" />
