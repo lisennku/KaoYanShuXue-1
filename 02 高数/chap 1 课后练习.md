@@ -21,3 +21,9 @@
 <img src="chap 1 课后练习.assets/28d5253d175f404043adbaa201851397.jpg" alt="28d5253d175f404043adbaa201851397" style="zoom:50%;" />
 
 <img src="chap 1 课后练习.assets/91198ea097bf2d488b8a70e0b83a6823.jpg" alt="91198ea097bf2d488b8a70e0b83a6823" style="zoom:50%;" />
+
+# 习题1-3
+
+<img src="chap 1 课后练习.assets/9661bfda5d77aa97f20634fc72e5b1a6.jpg" alt="9661bfda5d77aa97f20634fc72e5b1a6" style="zoom:50%;" />
+
+<img src="chap 1 课后练习.assets/4e1f578ca5711dd7ecaa3918a79e5c00.jpg" alt="4e1f578ca5711dd7ecaa3918a79e5c00" style="zoom:50%;" />
