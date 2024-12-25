@@ -175,6 +175,8 @@
 
 # 2. 数列的极限
 
+## 2.1 数列极限的定义
+
 > 数列
 >
 > 如果按照==某一法则==，对每个$n \in N_+$，对应一个确定的实数$x_n$，将这些实数按照下标从小到大的顺序排列得到的序列，称为数列，记为$\{x_n\}$
@@ -187,13 +189,159 @@
 >
 > $|x_n -a | < \varepsilon$
 >
-> 都成立，那么就称常数$a$是数列$\{x_n\}$的极限，记为$\displaystyle \lim_{n \to \infty}x_n = a$，或称$\{x_n\}$收敛于$a$，记为$x_n \to a\;(n \to \inft)$
+> 都成立，那么就称**常数$a$是数列$\{x_n\}$的极限**，记为$\displaystyle \lim_{n \to \infty}x_n = a$，或**称$\{x_n\}$收敛于$a$**，记为$x_n \to a\;(n \to \infty)$
+>
+> - 如果不存在这样的常数$a$，则说明数列$\{x_n\}$是发散的，或$\displaystyle \lim_{n \to \infty}x_n$不存在$DNE$
+> - 正数$\varepsilon$可以任意给定是重要前提，这样$|x_n - a|<\varepsilon$才可以表达出$x_n$与$a$==无限接近==的意思
+> - 正整数$N$是和$\varepsilon$相关的，随着$\varepsilon$的给定而确定
 
+- $|x_n -a | < \varepsilon$表示的内容
+    - 极限表示的是$\{x_n\}$无限接近值$a$，也即两者相差<u>几乎</u>为$0$，所以$|x_n-a|$任意小，因此可以使用$\forall \varepsilon >0, \;|x_n -a|<\varepsilon$
 
+> 数列极限符号表达
+>
+> $\displaystyle \lim_{n \to \infty}x_n = a \Leftrightarrow \forall \varepsilon > 0 \text{，} \exists \text{正整数}N \text{，当}n > N \text{时，有} |x_n - a| < \varepsilon$
 
+> 数列极限的几何意义
+>
+> 当$n > N$时，所有的$x_n$的点都落在数轴上的开区间$(a - \varepsilon, a + \varepsilon)$内
 
+## 2.2 收敛数列的性质
+
+1. 极限的唯一性
+
+    > 如果数列$\{x_n\}$收敛，那么极限唯一
+
+    <img src="chap 1 函数与极限.assets/image-20241225085824203.png" alt="image-20241225085824203" style="zoom: 60%;" />
+
+2. 收敛数列的有界性
+
+    > 如果数列$\{x_n\}$收敛，那么数列$\{x_n\}$一定有界
+
+    - 数列有界的定义
+
+        > 对于数列$\{x_n\}$，如果存在一个正整数$M$，使得对于一切$\{x_n\}$都满足不等式
+        >
+        > $|x_n| \le M$
+        >
+        > 则称数列$\{x_n\}$有界，如果这样的正整数$M$不存在，则称数列$\{x_n\}$无界
+
+3. 收敛数列的保号性
+
+    > 如果数列$\{x_n\}$收敛于$a$，或$\displaystyle \lim_{n \to \infty}x_n = a$，且$a > 0(\text{或}a < 0)$，则存在正整数$N$，当$n > N$时，都有$x_n > 0(\text{或}x_n < 0)$
+
+    > 保号性推论
+    >
+    > 如果数列$\{x_n\}$从某项起有$x_n \ge 0(\text{或}x_n \le 0)$，且数列$\{x_n\}$收敛于$a$，那么有$a \ge 0 (\text{或} a \le 0)$
+
+4. 收敛数列与其子数列间的关系
+
+    > 如果数列$\{x_n\}$收敛于$a$，那么他的任一子数列也收敛，且也收敛于$a$
+    >
+    > - 如果一个数列$\{x_n\}$的两个子数列收敛于不同值，则可知原数列$\{x_n\}$是发散的
+    > - 如果数列$\{x_n\}$是发散的，但其子数列可能是收敛的
+
+    - 子数列定义
+
+        > 从数列$\{x_n\}$中任意抽取无限多项，且保持这些项在原数列$\{x_n\}$中的先后次序，这样得到的新数列，就称为原数列$\{x_n\}$的子数列
 
 # 3. 函数的极限
+
+## 3.1 函数极限的定义
+
+- 自变量$x$趋于有限值$x_0$
+
+    > 设函数$f(x)$在点$x_0$的某一***去心邻域***内有定义，如果存在常数$A$，对任意给定的正数$\varepsilon$(不论他多么小)，总存在正数$\delta$，使得当$x$满足$0 < |x - x_0| < \delta$时，对应的函数值$f(x)$**都**满足不等式
+    >
+    > $|f(x) - A| < \varepsilon$
+    >
+    > 则常数$A$叫做函数$f(x)$，当$x \to x_0$时的极限，记作$\displaystyle \lim_{x \to x_0}f(x) = A$，或$f(x) \to A,\; \text{当}x \to x_0\text{时}$
+
+    - 定义中指明$0 < |x - x_0| < \delta$，说明
+
+        - $x \ne x_0$，<span style="text-decoration: underline double;">这说明函数在$x_0$处有没有极限，和$f(x)$在$x_0$处有无定义没有关系</span>
+        - $\delta$表示的是$x_0$邻域半径，<span style="text-decoration: underline double;">表示了$x$和$x_0$的接近程度</span>
+
+    - $|f(x)-A | < \varepsilon$表示的内容
+
+        - 极限表示的是$f(x)$无限接近值$A$，也即两者相差<u>几乎</u>为$0$，所以$|f(x)-A|$任意小，因此可以使用$\forall \varepsilon >0, \;|f(x) - A|<\varepsilon$
+
+    - $\delta$是由$\varepsilon$控制的，给定了$\varepsilon$，就可以找到一个对应的正数$\delta$，也因此，不需要要求$\delta$像$\varepsilon$那样，有**无论多小**的限制
+
+    - $\displaystyle \lim_{x \to x_0}f(x)=A$的几何意义
+
+        > - 对于给定的常数$A$和任意正数$\varepsilon$，在$y$轴做两条平行于$x$轴的水平线，在水平线之间的区域，就是我们希望接近于$A$的范围
+        >
+        > - 根据给定的范围，在点$x_0$附近可以找到一个$\delta$邻域，$(x-\delta, x+delta)$，$\color{red}此处说明\delta是由\varepsilon控制的$
+        >
+        > - 因此当函数$f(x)$上的点，其横坐标落到$(x-\delta, x+delta)\text{且}x \ne x_0$时，这些点的纵坐标就会落在水平线区域内，也即满足不等式$|f(x) - A | < \varepsilon$
+        >
+        > <img src="chap 1 函数与极限.assets/image-20241225150247565.png" alt="image-20241225150247565" />
+
+- 单侧极限
+
+    - 左右极限统称为单侧极限
+
+    - 左极限
+
+        - > 设函数$f(x)$在点$x_0$的某一***去心邻域***内有定义，如果存在常数$A$，对任意给定的正数$\varepsilon$(不论他多么小)，总存在正数$\delta$，使得当$x$满足==$-\delta < x - x_0 < 0$==时，对应的函数值$f(x)$**都**满足不等式
+            >
+            > $|f(x) - A| < \varepsilon$
+            >
+            > 则常数$A$叫做函数$f(x)$，当$x \to x_0^{\textcolor{red}{-}}$时的极限，记作$\displaystyle \lim_{x \to x_0^{\textcolor{red}{-}}}f(x) = A$，或$f(x) \to A,\; \text{当}x \to x_0^{\textcolor{red}{-}}\text{时}$
+
+    - 右极限
+
+        - > 设函数$f(x)$在点$x_0$的某一***去心邻域***内有定义，如果存在常数$A$，对任意给定的正数$\varepsilon$(不论他多么小)，总存在正数$\delta$，使得当$x$满足==$0 < x - x_0 < \delta$==时，对应的函数值$f(x)$**都**满足不等式
+            >
+            > $|f(x) - A| < \varepsilon$
+            >
+            > 则常数$A$叫做函数$f(x)$，当$x \to x_0^{\textcolor{red}{+}}$时的极限，记作$\displaystyle \lim_{x \to x_0^{\textcolor{red}{+}}}f(x) = A$，或$f(x) \to A,\; \text{当}x \to x_0^{\textcolor{red}{+}}\text{时}$
+
+- 函数$f(x)$，在$x \to x_0$时极限存在的充要条件是：<font color=red>**左右极限存在且相等**</font>
+
+- 自变量$x$的绝对值$|x|$趋于无穷大
+
+    - > 设函数$f(x)$当$|x|$大于某一正数时有定义，如果存在常数𝐴，对任意给定的正数𝜀(不论他多么小)，总存在正数$X$，使得当$|x|>X$时，对应的函数值$f(x)$都满足不等式
+        >
+        > $|f(x) - A| < \varepsilon$
+        >
+        > 那么常数$A$叫做函数$𝑓(𝑥)$，当$x \to \infty$时的极限，记作$\displaystyle \lim_{x \to \infty}f(x) = A$，或$f(x) \to A,\; \text{当}x \to \infty\text{时}$
+
+    - $\displaystyle \lim_{x \to \infty}f(x)=A$的几何意义
+
+        > - 对于给定的常数$A$和任意正数$\varepsilon$，在$y$轴做两条平行于$x$轴的水平线，在水平线之间的区域，就是我们希望接近于$A$的范围
+        > - 根据$\varepsilon$可以找到一个正数$X$，使得对于所有$|x| > X$，函数$f(x)$的值都会落在水平线之间的区域
+        >
+        > <img src="chap 1 函数与极限.assets/image-20241225160553182.png" alt="image-20241225160553182" />
+        >
+        > 
+
+## 3.2 函数极限的性质
+
+1. 函数极限唯一性
+
+    > 如果函数极限$\displaystyle \lim_{x \to x_0}f(x) = A$存在，那么极限唯一
+
+2. 函数极限局部有界性
+
+    > 如果函数极限$\displaystyle \lim_{x \to x_0}f(x) = A$存在，那么存在正常数$M$和$\delta$，使得当$0<|x - x_0| < \delta$时，$|f(x)|\le M$
+
+3. 函数极限局部保号性
+
+    > 如果函数极限$\displaystyle \lim_{x \to x_0}f(x) = A$，且$A > 0(\text{，或}A <0)$，那么存在正常数$\delta$，使得当$0<|x - x_0| < \delta$时，$f(x) > 0\text{，或}f(x)<0$
+
+    > 如果函数极限$\displaystyle \lim_{x \to x_0}f(x) = A$，且$A \ne 0$，那么就存在$x_0$的某一去心邻域$\stackrel {\circ} {U}(x_0)$
+    >
+    > 当$x \in \stackrel {\circ} {U}(x_0)$时，有$|f(x)| > \frac {|A|} 2$
+
+    > 如果在$x_0$的某个去心邻域内$f(x) \ge 0$，或有$f(x) \le 0$，且当$x \to x_0$时，且$\displaystyle \lim_{x \to x_0}f(x) = A$，那么$A \ge 0$，或$A \le 0$
+
+4. 函数极限与数列极限的关系
+
+    > 如果函数极限$\displaystyle \lim_{x \to x_0}f(x) = A$存在，$\{x_n\}$为函数$f(x)$的定义域内，任意收敛于$x_0$的数列，且满足$x_n \ne x_0$
+    >
+    > 那么相应的函数值数列$\{f(x_n)\}$必收敛，且$\displaystyle \lim_{n \to \infty}f(x_n) = \lim_{x \to x_0}f(x)$
 
 # 4. 无穷大和无穷小
 
