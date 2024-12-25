@@ -15,3 +15,9 @@
 <img src="chap 1 课后练习.assets/3d19916ae03ce900350e99110e17c4fb.jpg" alt="3d19916ae03ce900350e99110e17c4fb" style="zoom:50%;" />
 
 <img src="chap 1 课后练习.assets/294ed3b92033771f44a1fef2e4ff944c.jpg" alt="294ed3b92033771f44a1fef2e4ff944c" style="zoom:50%;" />
+
+# 习题1-2
+
+<img src="chap 1 课后练习.assets/28d5253d175f404043adbaa201851397.jpg" alt="28d5253d175f404043adbaa201851397" style="zoom:50%;" />
+
+<img src="chap 1 课后练习.assets/91198ea097bf2d488b8a70e0b83a6823.jpg" alt="91198ea097bf2d488b8a70e0b83a6823" style="zoom:50%;" />
