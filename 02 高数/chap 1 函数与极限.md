@@ -319,6 +319,8 @@
 
 ## 3.2 函数极限的性质
 
+> 仅给出$\displaystyle \lim_{x \to x_0}f(x) = A$的形式，但对$\displaystyle \lim_{x \to \infty}f(x) = A$也成立
+
 1. 函数极限唯一性
 
     > 如果函数极限$\displaystyle \lim_{x \to x_0}f(x) = A$存在，那么极限唯一
@@ -351,11 +353,94 @@
 
     > 如果函数$f(x)$当$x \to x_0$，或$x \to \infty$时的极限为0，那么称==函数==$f(x)$==为==当$x \to x_0$，或$x \to \infty$时的==无穷小==
 
-    > 在*自变量*的*同一变化过程*$x \to x_0$，或$x \to \infty$中，函数$f(x)$具有极限$A$的充要条件是，$f(x) = A + \alpha$，$\alpha$是无穷小
+    - 无穷小QA
+
+        - Q: 为什么0是无穷小而不是负数？
+            - A: 根据无穷小的定义可知，是当自变量$x \to x_0 \text{或} x \to \infty$时，函数的极限为$0$，根据极限的定义，极限为$0$是指$|f(x) - 0| < \varepsilon$，也即$|f(x)| < \varepsilon$，含有绝对值，因此以$0$为无穷小的标准
+        - Q: 无穷小是值还是函数？
+            - A: 无穷小是函数，具体的值，无法体现对任意的$\varepsilon$，都有$|f(x)| < \epsilon$ 
+
+    - **无穷小与极限存在**
+
+        >  在*自变量*的*同一变化过程*$x \to x_0$，或$x \to \infty$中，==函数$f(x)$具有极限$A$的充要条件==是，$f(x) = A + \alpha$，$\alpha$是无穷小
 
 - 无穷大
 
+    > 设函数$f(x)$在$x_0$的某一去心邻域内有定义(或$|x|$大于某一正数时有定义)，如果对于任意给定的正数$M$(无论$M$多么大)，总存在正数$\delta$，(或正数$X$)，只要$x$适合不等式$0 < |x - x_0| < \delta$(或$|x| > X$)，对应的函数值总满足不等式
+    >
+    > $|f(x)| > M$
+    >
+    > 那么称==函数==$f(x)$==为==当$x \to x_0$，或$x \to \infty$时的==无穷大==
+
+    > 按照极限定义，无穷大的函数，极限是不存在的，但为了叙述方便，也可以称函数的极限是无穷大，$\displaystyle \lim_{x \to x_0}f(x) = \infty$，或，$\displaystyle \lim_{x \to \infty}f(x) = \infty$
+
+    - **无穷大与无穷小**
+
+        > 在*自变量*的*同一变化过程*中，如果$f(x)$为无穷大，那么$\frac 1 {f(x)}$为无穷小；如果$f(x)$为无穷小，且$f(x) \ne 0$，则$\frac 1 {f(x)}$为无穷大
+
 # 5. 极限运算法则
+
+- 使用极限运算法则，可以求解部分函数的极限
+
+- 针对$x \to x_0$和$x \to \infty$都成立
+
+> - 定理1
+>     - 两个无穷小的==和==仍是无穷小
+> - 推论
+>     - 有限个无穷小的和仍是无穷小
+
+> - 定理2
+>     - 有界函数与无穷小的==乘积==是无穷小
+> - 推论1
+>     - 常数与无穷小的乘积是无穷小
+> - 推论2
+>     - 有限个无穷小的乘积是无穷小
+
+> - 定理3
+>     - 如果$\lim f(x) = A$、$\lim g(x) = B$，则有
+>         - $\lim[f(x) \pm g(x)] = \lim f(x) \pm \lim g(x) = A \pm B$
+>         - $\lim[f(x) \times g(x)] = \lim f(x) \times \lim g(x) = A \times B$
+>         - $\text{若}B \ne 0, \;\;\lim\frac {f(x)} {g(x)} = \frac {\lim f(x)} {\lim g(x)} = \frac A B$
+> - 推论1
+>     - 如果$f(x)$的极限存在，而$c$为常数，那么$\lim [cf(x)] = c\lim f(x)$
+> - 推论2
+>     - 如果$f(x)$的极限存在，而$n$是正整数，那么$\lim[f(x)]^n = [\lim f(x)]^n$
+
+> - 定理4
+>     - 设有数列$\{x_n\}$， $\{y_n\}$，如果$\displaystyle \lim_{n \to \infty} x_n = A$、$\displaystyle \lim_{n \to \infty} y_n = B$，则有
+>         - $\displaystyle \lim_{n \to \infty}(x_n + y_n) = \displaystyle \lim_{n \to \infty} x_n \pm \displaystyle \lim_{n \to \infty} y_n = A \pm B$
+>         - $\displaystyle \lim_{n \to \infty}(x_n \times y_n) = \displaystyle \lim_{n \to \infty} x_n \times \displaystyle \lim_{n \to \infty} y_n = A \times B$
+>         - $\text{若}B \ne 0, \;\;\displaystyle \lim_{n \to \infty}\frac {x_n} {y_n} = \frac {\displaystyle \lim_{n \to \infty} x_n} {\displaystyle \lim_{n \to \infty} y_n} = \frac A B$
+
+> - 定理5
+>     - 如果$\varphi(x) \ge \psi(x)$，且$\lim \varphi(x) = A$，$\lim \psi(x)=B$，那么$A \ge B$
+
+> - 定理6
+>
+>     - 设函数$y = f[g(x)]$是由函数$u=g(x)$和$y=f(u)$复合而来，且$f[g(x)]$在$x_0$的某一去心邻域内有定义
+>
+>         若$\displaystyle \lim_{x \to x_0}u(x) = u_0$，$\displaystyle \lim_{u \to u_0}f(u) = A $
+>
+>         且存在$\delta_0 >0$，当$x \in \stackrel {\circ} {U}(x_0, \delta_0)$时，有$g(x) \ne 0$，那么
+>
+>         $\displaystyle \lim_{x \to x_0}f[g(x)] = \displaystyle \lim_{u \to u_0}f(u) = A $
+
+- 极限求解方法 之一
+
+    > 涉及多项式，和有理分式的极限
+
+    - 当$x \to x_0$时
+        - 如果是多项式函数的极限，可以将$x_0$带入函数直接计算出极限
+        - 如果是有理分式的极限，且分母带入$x_0$后不为$0$，可以将$x_0$带入函数直接计算出极限
+            - 如果分母为$0$
+                - 先考虑约分是否可以计算出极限
+                - 再考虑如果分母为$0$，分子不为$0$，则其倒数的极限为$0$，也即无穷小，根据无穷小的性质，可推断原有理分式极限为$\infty$
+                - 都不可以考虑其他方法
+    - 当$x \to \infty$时
+        - 如果是有理分式的极限，根据分子分母中，系数非零的最高次项的次数，进行判断
+            - 分子次数 $<$ 分母次数，极限为$0$
+            - 分子次数 $=$ 分母次数，极限为分子分母中最高次项的系数之比
+            - 分子次数 $>$ 分母次数，极限为$\infty$
 
 # 6. 极限存在准则 与 两个重要极限
 
