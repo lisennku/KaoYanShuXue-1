@@ -31,3 +31,7 @@
 # 习题1-4
 
 <img src="chap 1 课后练习.assets/ccca7e18932523c1b925efd48d92b4a5.jpg" alt="ccca7e18932523c1b925efd48d92b4a5" style="zoom:50%;" />
+
+# 习题1-5
+
+<img src="chap 1 课后练习.assets/dcde40ff8595b8e0655c8790bb8408ec.jpg" alt="dcde40ff8595b8e0655c8790bb8408ec" style="zoom:50%;" />
