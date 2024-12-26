@@ -444,8 +444,47 @@
 
 # 6. 极限存在准则 与 两个重要极限
 
+1. 准则一        **夹逼定理**
+
+    > 如果数列$\{x_n\}$，$\{y_n\}$，$\{z_n\}$满足以下条件
+    >
+    > - 从某项起，即$\exists n_0 \in \mathbb {N^+}$，当$n > n_0$时，有$\{y_n\} \le \{x_n\} \le \{z_n\}$
+    > - $\displaystyle \lim_{n \to \infty}y_n = a, \;\;\lim_{n \to \infty}z_n = a$
+    >
+    > 那么数列$\{x_n\}$的极限存在，且也为$a$
+
+    > 如果函数$f(x)$，$g(x)$，$h(x)$满足以下条件
+    >
+    > - 对$x \in \stackrel {\circ} {U}(x_0, r)$(或$|x| > X$)，有$g(x) \le f(x) \le h(x)$
+    > - $\displaystyle \lim_{n \to \infty }g(x) = A, \;\;\lim_{n \to \infty}h(x) = A$ 或 $\displaystyle \lim_{n \to x_0 }g(x) = A, \;\;\lim_{n \to x_0}h(x) = A$
+    >
+    > 那么函数$f(x)$的极限存在，且也为$A$
+
+2. 准则二        **==单调有界==数列必有极限**
+
 # 7. 无穷小比较
 
 # 8. 函数的连续性和间断点
 
 # 9. 连续函数的运算 与 初等函数的连续性
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
