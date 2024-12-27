@@ -35,3 +35,13 @@
 # 习题1-5
 
 <img src="chap 1 课后练习.assets/dcde40ff8595b8e0655c8790bb8408ec.jpg" alt="dcde40ff8595b8e0655c8790bb8408ec" style="zoom:50%;" />
+
+# 习题1-6
+
+<img src="chap 1 课后练习.assets/ba39752d0a6eb3e2fb1145edd88fb102.jpg" alt="ba39752d0a6eb3e2fb1145edd88fb102" style="zoom:50%;" />
+
+# 习题1-7
+
+<img src="chap 1 课后练习.assets/b611e9a9719e3a4a7d4b031d21e5110e.jpg" alt="b611e9a9719e3a4a7d4b031d21e5110e" style="zoom:50%;" />
+
+<img src="chap 1 课后练习.assets/0df6a51491b3249ac4f1af52d98bb0d7.jpg" alt="0df6a51491b3249ac4f1af52d98bb0d7" style="zoom:50%;" />
