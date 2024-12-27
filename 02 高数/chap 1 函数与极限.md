@@ -462,9 +462,90 @@
 
 2. 准则二        **==单调有界==数列必有极限**
 
+    **<u>充分条件</u>**
+
+    > 如果数列$\{x_n\}$单调且有界，那么数列$\{x_n\}$一定有极限，也即一定收敛
+    >
+    > *此处的单调是广义的，包含等号*
+
+    > 设函数$f(x)$在点$x_0$的某个左邻域内单调且有界，则$f(x)$在$x_0$的左极限必定存在
+    >
+    > 设函数$f(x)$在点$x_0$的某个右邻域内单调且有界，则$f(x)$在$x_0$的右极限必定存在
+    >
+    > 设$X$是任意大的正数，函数$f(x)$在$x > X$的区间上单调且有界，则$f(x)$在$x \to +\infty$的极限必定存在
+    >
+    > 设$X$是任意大的正数，函数$f(x)$在$x < -X$的区间上单调且有界，则$f(x)$在$x \to -\infty$的极限必定存在
+
+3. 柯西极限存在准则(柯西审敛原理)
+
+    > 数列$\{x_n\}$收敛的==充分必要条件==是：
+    > 对于任意给定的正数$\varepsilon$，存在正整数$N$，使得当$n > N, \;\; n > N$时，有
+    > $|x_n - x_m| < \varepsilon$
+    > 可以推广到函数极限存在的充要条件
+
+- 两个重要极限
+    - $\displaystyle \lim_{x \to 0}\frac {sin(x)} {x} = 1$
+    - $\displaystyle \lim_{x \to \infty}(1 +  {\frac 1 x})^x = e$
+        - 更一般的形式
+            - $\displaystyle \lim_{n \to \infty} (1 + \frac x n)^{n} = e^x$
+            - $\displaystyle \lim_{h \to 0}(1 + hx)^{\frac 1 h} = e^x$
+
 # 7. 无穷小比较
 
+- 两个无穷小的和/差/积都是无穷小，但对于商，会存在等于$0,\;\infty,\;c\; c \ne 0$的情形
+  - 比值为$0$，说明分子趋于零的速度快于分母趋于零的速度
+  - 比值为$\infty$，说明分母趋于零的速度快于分子趋于零的速度
+  - 比值为$1$，说明分子分母趋于零的速度快慢相仿
+
+
+- 无穷小比值相关定理
+  
+  
+    - $\alpha$, $\beta$都是同一个自变量变化过程中的无穷小，且$\alpha \ne 0$，$\lim \frac {\beta} {\alpha}$也是同一自变量变化过程中的极限
+    
+    > 如果$\lim \frac {\beta} {\alpha} = 0$，那么就说$\beta$是比$\alpha$高阶的无穷小，记作$\beta = o(\alpha)$
+    
+    > 如果$\lim \frac {\beta} {\alpha} = \infty$，那么就说$\beta$是比$\alpha$低阶的无穷小
+    
+    > 如果$\lim \frac {\beta} {\alpha} = c \;\;c \ne 0$，那么就说$\beta$与$\alpha$同阶的无穷小
+    
+    > 如果$\lim \frac {\beta} {\alpha^k} = c \;\;c \ne 0,\;\; k > 0$，那么就说$\beta$是关于$\alpha$的$k$阶无穷小
+    
+    > 如果$\lim \frac {\beta} {\alpha} = 1$，那么就说$\beta$与$\alpha$是等价无穷小，记作$\beta \sim \alpha$
+    >
+    > > 等价无穷小具有如下性质 
+    > >
+    > > - 自反性，$\alpha \sim \alpha$
+    > > - 对称性，若$\alpha \sim \beta$， 则$\beta \sim \alpha$
+    > > - 传递性，若$\alpha \sim \beta$，$\beta \sim \gamma$，则$\alpha \sim \gamma$
+    
+- 定理一：
+
+    > $\beta$和$\alpha$是等价无穷小的充要条件是，$\beta = \alpha + o(\alpha)$
+
+- 定理二：
+
+    > 设$\alpha \sim \stackrel {\sim} {\alpha}$，$\beta \sim \stackrel {\sim} {\beta}$， 且极限$\lim \frac {\stackrel {\sim} {\beta}} {\stackrel {\sim} {\alpha}}$存在，则
+    >
+    > $\lim \frac {\beta} {\alpha} = \lim \frac {\stackrel {\sim} {\beta}} {\stackrel {\sim} {\alpha}}$
+
+- 常见等价无穷小
+
+    > 当$x \to 0$时有如下等价无穷下
+    
+    - $sin(x) \sim x$
+    - $tan(x) \sim x$
+    - $arcsin(x) \sim x$
+    - $arctan(x) \sim x$
+    - $1-cos(x) \sim \frac 1 2 x^2$
+    - $sec(x) - 1 \sim \frac 1 2 x^2$
+    - $\sqrt[n]{1+x} - 1 \sim \frac 1 n x$
+        - 证明过程
+            - <img src="chap 1 函数与极限.assets/image-20241227150755966.png" alt="image-20241227150755966" style="zoom:67%;" />    
+
 # 8. 函数的连续性和间断点
+
+
 
 # 9. 连续函数的运算 与 初等函数的连续性
 
