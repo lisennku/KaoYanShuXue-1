@@ -539,6 +539,7 @@
     - $arctan(x) \sim x$
     - $1-cos(x) \sim \frac 1 2 x^2$
     - $sec(x) - 1 \sim \frac 1 2 x^2$
+    - $e^x - 1 \sim x$
     - $\sqrt[n]{1+x} - 1 \sim \frac 1 n x$
         - 证明过程
             - <img src="chap 1 函数与极限.assets/image-20241227150755966.png" alt="image-20241227150755966" style="zoom:67%;" />    
@@ -639,7 +640,6 @@
     > 基本初等函数，在其定义域内，都是连续的
 
     > 一切初等函数，在其定义区间内，都是连续的
-
 
 
 
