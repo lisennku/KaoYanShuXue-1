@@ -61,3 +61,5 @@
 <img src="chap 1 课后练习.assets/a60873d42339fa410198a9ca2f95de59.jpg" alt="a60873d42339fa410198a9ca2f95de59" style="zoom:50%;" />
 
 <img src="chap 1 课后练习.assets/147ed9d6dcee09cdd085d3231149a533.jpg" alt="147ed9d6dcee09cdd085d3231149a533" style="zoom:50%;" />
+
+<img src="chap 1 课后练习.assets/9a3b33ef85bd99d2c93a9a6902273bc5.jpg" alt="9a3b33ef85bd99d2c93a9a6902273bc5" style="zoom:50%;" />
