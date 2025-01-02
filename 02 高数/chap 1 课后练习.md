@@ -63,3 +63,11 @@
 <img src="chap 1 课后练习.assets/147ed9d6dcee09cdd085d3231149a533.jpg" alt="147ed9d6dcee09cdd085d3231149a533" style="zoom:50%;" />
 
 <img src="chap 1 课后练习.assets/9a3b33ef85bd99d2c93a9a6902273bc5.jpg" alt="9a3b33ef85bd99d2c93a9a6902273bc5" style="zoom:50%;" />
+
+# 习题1-10
+
+<img src="chap 1 课后练习.assets/cd337e3bc7c78ef27e9c0136460df110.jpg" alt="cd337e3bc7c78ef27e9c0136460df110" style="zoom:50%;" />
+
+<img src="chap 1 课后练习.assets/bbebdd4c6cbbf821493f9c1b69181d3e.jpg" alt="bbebdd4c6cbbf821493f9c1b69181d3e" style="zoom:50%;" />
+
+<img src="chap 1 课后练习.assets/668d4c02c2bd77a9ccaf2fdda48090db.jpg" alt="668d4c02c2bd77a9ccaf2fdda48090db" style="zoom:50%;" />
