@@ -71,3 +71,15 @@
 <img src="chap 1 课后练习.assets/bbebdd4c6cbbf821493f9c1b69181d3e.jpg" alt="bbebdd4c6cbbf821493f9c1b69181d3e" style="zoom:50%;" />
 
 <img src="chap 1 课后练习.assets/668d4c02c2bd77a9ccaf2fdda48090db.jpg" alt="668d4c02c2bd77a9ccaf2fdda48090db" style="zoom:50%;" />
+
+# 总习题一
+
+<img src="chap 1 课后练习.assets/8aeafa70a4e2dd4c53eee828aebdea1f.jpg" alt="8aeafa70a4e2dd4c53eee828aebdea1f" style="zoom:50%;" />
+
+<img src="chap 1 课后练习.assets/b755c23aa7b4c65852b391cebdf8e81b.jpg" alt="b755c23aa7b4c65852b391cebdf8e81b" style="zoom:50%;" />
+
+<img src="chap 1 课后练习.assets/c3ae705f5c2b54732701ff3beb9b3ef9.jpg" alt="c3ae705f5c2b54732701ff3beb9b3ef9" style="zoom:50%;" />
+
+<img src="chap 1 课后练习.assets/922f7fb5f9997eb6152d622ba8d4f0b8.jpg" alt="922f7fb5f9997eb6152d622ba8d4f0b8" style="zoom:50%;" />
+
+<img src="chap 1 课后练习.assets/939bab55b9ee18687a0167f8bfea0a05.jpg" alt="939bab55b9ee18687a0167f8bfea0a05" style="zoom:50%;" />
