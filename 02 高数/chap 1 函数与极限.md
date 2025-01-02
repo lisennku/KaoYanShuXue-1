@@ -704,3 +704,5 @@
 - 函数的Lipschitz条件-利普希茨条件
 
     > 设函数$f(x)$对于闭区间$[a, b]$上任意两点$x_1$，$x_2$，恒有$|f(x_1) - f(x_2)| < L|x_1 - x_2|$，其中$L$为正常数，则函数$f(x)$在闭区间$[a, b]$上连续，其实一致连续
+
+    <img src="chap 1 函数与极限.assets/a71d410608b3ccc370d5c35f3debe6dd.jpg" alt="a71d410608b3ccc370d5c35f3debe6dd" style="zoom:50%;" />
