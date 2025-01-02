@@ -272,7 +272,7 @@
 
         > - 对于给定的常数$A$和任意正数$\varepsilon$，在$y$轴做两条平行于$x$轴的水平线，在水平线之间的区域，就是我们希望接近于$A$的范围
         >
-        > - 根据给定的范围，在点$x_0$附近可以找到一个$\delta$邻域，$(x-\delta, x+delta)$，$\color{red}此处说明\delta是由\varepsilon控制的$
+        > - 根据给定的范围，在点$x_0$附近可以找到一个$\delta$邻域，$(x-\delta, x+\delta)$，$\color{red}此处说明\delta是由\varepsilon控制的$
         >
         > - 因此当函数$f(x)$上的点，其横坐标落到$(x-\delta, x+delta)\text{且}x \ne x_0$时，这些点的纵坐标就会落在水平线区域内，也即满足不等式$|f(x) - A | < \varepsilon$
         >
