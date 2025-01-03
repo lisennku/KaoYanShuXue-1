@@ -540,6 +540,7 @@
     - $1-cos(x) \sim \frac 1 2 x^2$
     - $sec(x) - 1 \sim \frac 1 2 x^2$
     - $e^x - 1 \sim x$
+    - $a^x - 1 \sim xln(a)$
     - $\sqrt[n]{1+x} - 1 \sim \frac 1 n x$
         - 证明过程
             - <img src="chap 1 函数与极限.assets/image-20241227150755966.png" alt="image-20241227150755966" style="zoom:67%;" />    
