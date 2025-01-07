@@ -146,20 +146,35 @@
     - 函数性质
     - 函数图像
     - 导数
+    
 - 余切
     - 函数性质
     - 函数图像
     - 导数
 
-- 正割
+- 正割 $sec(x) = \frac {1} {cos(x)}$
     - 函数性质
+    
+        - 定义域，$x \in \mathbb R, \; x \ne \frac {\pi} {2} +k\pi,\; k \in \mathbb Z$
+        - 值域，$y \in (-\infty, -1] \cup [1, +\infty)$，为偶函数，周期为$2\pi$
+        - 因其是$cos(x)$的倒数，所以在$cos(x)$每个为$0$的位置都有一个垂直渐近线
     - 函数图像
+    
+        <img src="chap 0 知识点.assets/image-20250107233120322.png" alt="image-20250107233120322" style="zoom:50%;" />
     - 导数
         - $[sec(x)]^{\prime} = sec(x)tan(x)$
     
-- 余割
+- 余割 $csc(x) = \frac {1} {sin(x)}$
     - 函数性质
+    
+        - 定义域，$x \in \mathbb R,\; x \ne k\pi, \; k \in \mathbb Z$
+        - 值域，$y \in (-\infty, -1] \cup [1, +\infty)$，非奇非偶函数，周期为$2\pi$
+        - 因其是$sin(x)$的倒数，所以在$sin(x)$每个为$0$的位置都有一个垂直渐近线
+    
     - 函数图像
+    
+        <img src="chap 0 知识点.assets/image-20250107233807943.png" alt="image-20250107233807943" style="zoom:50%;" />
+    
     - 导数
         - $[csc(x)]^{\prime} = csc(x)cot(x)$
 
@@ -167,8 +182,8 @@
 ## 2.5 反三角函数
 
 - 反正弦 $arcsin(x)$
-    
-    - $arcsin(x)$函数是$sin(x)$的反函数，但因在整个定义域上，$sin(x)$不满足水平线检验，因此只能在某个符合水平线检验的区间内进行反函数	
+  
+    - $arcsin(x)$函数是$sin(x)$的反函数，但因在整个定义域上，$sin(x)$不满足水平线检验，因此只挑选$sin(x),\; x\in [-\frac {\pi} {2}, \frac {\pi} {2}]$进行反函数	
     - 函数性质
 
         - 定义域，$x \in [-1, +1]$
@@ -182,7 +197,7 @@
     
 - 反余弦 $arccos(x)$
 
-    - $arccos(x)$函数是$cos(x)$的反函数，但因在整个定义域上，$cos(x)$不满足水平线检验，因此只能在某个符合水平线检验的区间内进行反函数
+    - $arccos(x)$函数是$cos(x)$的反函数，但因在整个定义域上，$cos(x)$不满足水平线检验，因此只挑选$cos(x),\; x \in [0, \pi]$这个区间上进行反函数
 
     - 函数性质
 
@@ -198,14 +213,32 @@
         - $[arccos(x)]^{\prime} = -\frac {1} {\sqrt{1-x^2}}$
 
 - 反正切 $arctan(x)$
+    
+    - $arctan(x)$是$tan(x)$的反函数，但因在整个定义域上，$tan(x)$​不满足水平线检验，因此只挑选$tan(x),\; x\in [-\frac {\pi} {2}, \frac {\pi} {2}]$进行反函数
+    
     - 函数性质
+
+        - 定义域，$x \in \mathbb R$
+        - 值域，$y \in \textcolor{red}{(}-\frac {\pi} {2}, \frac {\pi} {2}\textcolor{red}{)}$，为奇函数，经过原点，定义域上严格单调递增
+    
     - 函数图像
+    
+        <img src="chap 0 知识点.assets/image-20250107234814527.png" alt="image-20250107234814527" style="zoom:50%;" />
+    
     - 导数
         - $[arctan(x)]^{\prime} = \frac {1} {1 + x^2}$
-
+    
 - 反余切 $arccot(x)$
+
+    - $arccot(x)$是$cot(x)$的反函数，但因在整个定义域上，$cot(x)$不满足水平线检验，因此只挑选$cot(x),\; x\in [0, \pi]$进行反函数
     - 函数性质
-    - 函数图像
+
+        - 定义域，$x \in \mathbb R$
+        - 值域，$y \in \textcolor{red}{(}0, \pi\textcolor{red}{)}$，非奇非偶函数，经过点$(0, \frac {\pi} {2})$，定义域上严格单调递减
+    - 函数图像 
+
+        <img src="chap 0 知识点.assets/image-20250107234846876.png" alt="image-20250107234846876" style="zoom:50%;" />
+
     - 导数
         - $[arctan(x)]^{\prime} = -\frac {1} {1 + x^2}$
 
