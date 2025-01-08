@@ -116,11 +116,14 @@
 > 如果函数$f(x)$具有$n$阶导数，也称为函数$n$阶可导
 
 - 常见函数的$n$阶导数
-    - $sin(x)$
-    - $cos(x)$
-    - $ln(1+x)$
-    - $x^{\mu}$
-    - 
+    - $[sin(x)]^{(n)} = sin(x + n \cdot \frac {\pi} {2})$
+    - $[cos(x)]^{(n)} = cos(x + n \cdot \frac {\pi} {2})$
+    - $[ln(1+x)]^{(n)} = (-1)^{n-1} \cdot \frac {(n-1)!} {(1+x)^n}$
+    - $[x^{\mu}]^{(n)} = \mu(\mu-1)(\mu-2)\cdots (\mu-n+1)x^{\mu-n}$
+- $n$阶导数的和、差、积
+    - $(u \pm v)^{(n)} = u^{(n)} \pm v^{(n)}$
+    - $(uv)^{(n)} = \displaystyle \sum_{k=0}^nC_n^ku^{(n-k)}v^{()}$
+
 
 # 4. 隐函数 和 参数方程的导数
 
