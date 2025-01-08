@@ -17,3 +17,12 @@
 <img src="chap 2 课后练习.assets/2a39ad0932c7b5d4ba89a1cdc286896c.jpg" alt="2a39ad0932c7b5d4ba89a1cdc286896c" style="zoom:25%;" />
 
 <img src="chap 2 课后练习.assets/153a61932e399cdaec32621b21fa32a3.jpg" alt="153a61932e399cdaec32621b21fa32a3" style="zoom:25%;" />
+
+# 习题2-3
+
+<img src="chap 2 课后练习.assets/d10f957349aab230df6ed459ddb13894.jpg" alt="d10f957349aab230df6ed459ddb13894" style="zoom:25%;" />
+
+<img src="chap 2 课后练习.assets/6cd3fa5e6e7a215270cd53db3720b47c.jpg" alt="6cd3fa5e6e7a215270cd53db3720b47c" style="zoom:25%;" />
+
+<img src="D:/WeChatFile/xwechat_files/zlc245062522_4873/temp/2025-01/RWTemp/668da0086682518125bc4f92d719671b.jpg" alt="668da0086682518125bc4f92d719671b" style="zoom:25%;" />
+
