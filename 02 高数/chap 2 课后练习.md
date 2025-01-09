@@ -26,3 +26,8 @@
 
 <img src="D:/WeChatFile/xwechat_files/zlc245062522_4873/temp/2025-01/RWTemp/668da0086682518125bc4f92d719671b.jpg" alt="668da0086682518125bc4f92d719671b" style="zoom:25%;" />
 
+# 习题 2-4
+
+<img src="chap 2 课后练习.assets/025baaf1e8c5f49b58f0e01f20bcc4f4.jpg" alt="025baaf1e8c5f49b58f0e01f20bcc4f4" style="zoom:25%;" />
+
+<img src="chap 2 课后练习.assets/b533b46d2c7201b7a6db9a82f4ece3a2.jpg" alt="b533b46d2c7201b7a6db9a82f4ece3a2" style="zoom:25%;" />
