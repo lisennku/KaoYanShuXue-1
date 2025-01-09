@@ -151,37 +151,57 @@
 
 # 5. 函数的微分
 
+## 5.1 微分的概念
 
+- 函数在某点的可微
 
+    > 设函数$y=f(x)$在某区间内有定义，$x_0$及$x_0+\Delta x$都在该区间内，如果函数的增量
+    >
+    > $\Delta y = f(x_0+\Delta x) - f(x_0)$
+    >
+    > 可以表示为
+    >
+    > $\Delta y = A\Delta x +o(\Delta x)$，其中$A$是不依赖于$\Delta x$的常数，
+    >
+    > 那么称函数$y=f(x)$在点$x_0$是<u>**可微**</u>的，
+    >
+    > $A\Delta x$称为函数$y=f(x)$在点$x_0$相应于自变量增量$\Delta x$的微分，记作==$dy$==
 
+- 在某点$x_0$可微的充分必要条件
 
+    > 函数在点$x_0$可微的充要条件是，函数在点$x_0$可导
 
+    > 如果函数在点$x_0$可微，那么该微分一定是$dy = f^{\prime}(x_0) \Delta x$
 
+- $\Delta y$和$dy$的关系
 
+    - 当$f^{\prime} \ne 0$，通过极限$\displaystyle \lim_{\Delta x \to 0} \frac {\Delta y} {dy} = \lim_{\Delta x \to 0} \frac {\Delta y} {f^{\prime}(x_0)\Delta x} = \frac {1} {f^{\prime}(x_0)} \cdot \lim_{\Delta x \to 0}\frac {\Delta y} {\Delta x} = 1$可知，==$\Delta y$和$dy$是等价无穷小==
+    - 由等价无穷小的定理可知，==$\Delta y=dy + o(dy)$==，所以$dy$是$\Delta y$的主部，又因为$dy = f^{\prime}(x_0)\Delta x$，所以当$f^{\prime}(x_0) \ne 0$时，$dy$又称为$\Delta y$的线性主部
+    - 当$f^{\prime}(x_0) \ne 0$时，若以微分$dy = f^{\prime}(x_0)\Delta x$代替增量$\Delta y=f(x_0+\Delta x) - f(x_0)$，其误差为$o(dy)$
+        - 因此当$|\Delta x|$很小时，近似有$\Delta y \approx dy$
 
+- 函数的微分
 
+    - 函数$y=f(x)$在任意点的微分，称为函数的微分，记作$dy$或$df(x)$，有$dy = f^{\prime}(x) \Delta x$
+    - 通常将自变量$x$的增量$\Delta x$称为自变量的微分，记作$dx$，因此函数的微分可记为$dy = f^{\prime}(x)dx$，也即$\frac {dy} {dx} = f^{\prime}(x)$
 
+## 5.2 微分的几何意义
 
+<img src="chap 2 导数与微分.assets/image-20250109134526435.png" alt="image-20250109134526435" style="float: left; margin-right: 10px;"/>
 
+- 点$M$是曲线上顶点，坐标为$(x_0, y_0)$，当自变量$x$有微小增量$\Delta x$时，得到曲线上另外一点$N$，坐标为$(x_0+\Delta x, y_0+\Delta y)$
+    - 故有，$MQ = \Delta x$，$NQ = \Delta y$
+- 过点$M$做$MT$，其倾角为$\alpha$，则有$PQ = MQ \cdot tan(\alpha) = f^{\prime}(x_0) \cdot \Delta x = dy$
+- 因此
+    - 对于可微函数$y=f(x)$而言，当$\Delta y$是曲线$y=f(x)$上点的纵坐标增量时，$dy$是曲线切线上的点的纵坐标的相应增量
+    - 当$|\Delta x|$很小时，$|\Delta y - dy|$比$|\Delta x|$小得多，因此点$M$附近可以使用切线段来近似代替曲线段
 
+## 5.3 微分在近似计算中的应用
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- 计算$\Delta y$
+    - $\Delta y = f^{\prime}(x_0) \cdot \Delta x$
+- 计算$f(x_0 + \Delta x)$
+    - $f(x_0 + \Delta x) = f(x_0) + f^{\prime}(x_0) \cdot \Delta x$
+- 计算$f(x)$
+    - $f(x) \approx f(x_0) + f^{\prime}(x_0) (x - x_0)$
 
