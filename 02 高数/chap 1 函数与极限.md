@@ -521,7 +521,7 @@
     
 - 定理一：
 
-    > $\beta$和$\alpha$是等价无穷小的充要条件是，$\beta = \alpha + o(\alpha)$
+    > $\beta$和$\alpha$是等价无穷小的充要条件是，$\beta = \alpha + o(\alpha)$，$\alpha$称为$\beta$的主部
 
 - 定理二：
 
