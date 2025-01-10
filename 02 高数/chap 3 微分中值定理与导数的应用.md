@@ -57,17 +57,38 @@
 
     - 若记$f(x)$为$y$，则有$\Delta y = f^{\prime}(\xi)\Delta x$
 
-    - 又因为$\xi \in [x, x+\Delta x]$，所以可以用另一形式变现，设$\theta \in (0, 1)$，则有
+    - 又因为$\xi \in [x, x+\Delta x]$，所以可以用另一形式体现，设$\theta \in (0, 1)$，则$[x, x+\Delta x]$中的某点可用$x + \theta \Delta x$表示
+
+    - 综上，则有
 
         $\Delta y = f^{\prime}(x + \theta \Delta x)\Delta x$
-
-    - 因此，不像函数的微分$dy = f^{\prime}(x)\Delta x + o(\Delta x)$，只有当$|\Delta x|$很小的时候才有$\Delta y \approx dy$，微分中值定理直接给出了$\Delta y$的准确描述
+    
+    - 因此，不像函数的微分$dy = f^{\prime}(x)\Delta x + o(\Delta x)$，只有当$|\Delta x|$很小的时候才有$\Delta y \approx dy$，微分中值定理直接给出了$\Delta y$的==准确==描述
 
 ## 1.4 柯西中值定理
 
-
+> 如果函数$f(x)$和$F(x)$，在闭区间$[a, b]$上连续，在开区间$(a, b)$内可导，且对任意$x \in (a,b)$，有$F^{\prime}(x) \ne 0$，则
+>
+> 在开区间$(a, b)$内至少有一点$\xi$，使得
+>
+> $\frac {f(b) - f(a)} {F(b) - F(a)} = \frac {f^{\prime}(\xi)} {F^{\prime}(\xi)}$
 
 # 2. 洛必达法则
+
+- 洛必达法则通过柯西中值定理推出
+- 参见[洛必达法则](..\01 基础复习\普林斯顿微积分读本\chap 14 洛必达法则和极限问题总结.md)
+
+> 洛必达法则适用于求极限的函数中出现不定式的情形
+>
+> 不定式如下：
+>
+> - $\frac 0 0$
+> - $\frac {\infty} {\infty}$
+> - $0 \cdot \infty$
+> - $\infty - \infty$
+> - $0 ^ 0$
+> - $1^{\infty}$
+> - $\infty^0$
 
 # 3. 泰勒公式
 
