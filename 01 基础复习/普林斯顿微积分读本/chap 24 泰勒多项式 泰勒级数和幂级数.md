@@ -34,7 +34,7 @@
 >
 > <font size=4 color=blue>关于$x=a$的$N$阶余项：</font>
 >
-> <font size=4 color=blue>$R_N(x) = \frac {f^{(N+1)(a)}} {(N+1)!} (x-a)^{N+1}$</font>
+> <font size=4 color=blue>$R_N(x) = \frac {f^{(N+1)(c)}} {(N+1)!} (x-a)^{N+1}$</font>
 >
 > - $c$是介于$x$和$a$之间的一个数
 >     - 注意：$x$可能大于$a$，也可能小于$a$，所以说$c$介于两者
