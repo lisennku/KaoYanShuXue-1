@@ -213,7 +213,7 @@
         - $[arccos(x)]^{\prime} = -\frac {1} {\sqrt{1-x^2}}$
 
 - 反正切 $arctan(x)$
-    
+  
     - $arctan(x)$是$tan(x)$的反函数，但因在整个定义域上，$tan(x)$​不满足水平线检验，因此只挑选$tan(x),\; x\in [-\frac {\pi} {2}, \frac {\pi} {2}]$进行反函数
     
     - 函数性质
@@ -368,7 +368,7 @@ $\displaystyle (a + b)^n = \sum_{k = 0}^nC_n^ka^{n-k}b^k \quad n \in \mathbb N^+
 
 ## 4.3 幂差公式
 
-$a_n - b^n = (a - b)(a^{n-1} + a^{n-2}b + a^{n-3}b^2 + \dots + ab^{n-2} + b^{n-1})$
+$a^n - b^n = (a - b)(a^{n-1} + a^{n-2}b + a^{n-3}b^2 + \dots + ab^{n-2} + b^{n-1})$
 
 ## 4.4 幂和公式
 
@@ -385,3 +385,12 @@ $a_n - b^n = (a - b)(a^{n-1} + a^{n-2}b + a^{n-3}b^2 + \dots + ab^{n-2} + b^{n-1
 
 - $max\{a, b\} = \frac 1 2 (a + b + |a - b|)$
 - $min\{a, b\} = \frac 1 2 (a + b - |a - b|)$
+
+## 4.6 AM-GM不等式
+
+> 算数平均数大于等于几何平均数
+
+若$a$、$b$ 非负实数，则有$\frac {a+b} {2} \ge 2\sqrt{ab}$
+
+推广到任意个数，则有，对任意正数$a_1, a_2,\dots,a_n$，有$\frac {a_1 + a_2 + \cdots + a_n} {n} \ge \sqrt[n]{a_1a_2\cdots a_n}$
+
