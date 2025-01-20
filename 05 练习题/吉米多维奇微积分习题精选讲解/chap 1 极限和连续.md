@@ -39,3 +39,11 @@
 <img src="chap 1 极限和连续.assets/f31403a59ff61ffeaa01ea4fd6017a13.jpg" alt="f31403a59ff61ffeaa01ea4fd6017a13" style="zoom:25%;" />
 
 <img src="chap 1 极限和连续.assets/19b1bc6d75d41332c96733d2be63c456.jpg" alt="19b1bc6d75d41332c96733d2be63c456" style="zoom:25%;" />
+
+<img src="chap 1 极限和连续.assets/fbb42e0587a42c6940f25333ec1543dc.jpg" alt="fbb42e0587a42c6940f25333ec1543dc" style="zoom:25%;" />
+
+<img src="chap 1 极限和连续.assets/84f819d3064a79874a5a66b77289e33e.jpg" alt="84f819d3064a79874a5a66b77289e33e" style="zoom:25%;" />
+
+<img src="chap 1 极限和连续.assets/748fd8e2329b6d20c1459ce0b5cb98b0.jpg" alt="748fd8e2329b6d20c1459ce0b5cb98b0" style="zoom:25%;" />
+
+<img src="chap 1 极限和连续.assets/4d9f638adf66d8db55d8eb0e0611ab10.jpg" alt="4d9f638adf66d8db55d8eb0e0611ab10" style="zoom:25%;" />
