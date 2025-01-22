@@ -394,3 +394,8 @@ $a^n - b^n = (a - b)(a^{n-1} + a^{n-2}b + a^{n-3}b^2 + \dots + ab^{n-2} + b^{n-1
 
 推广到任意个数，则有，对任意正数$a_1, a_2,\dots,a_n$，有$\frac {a_1 + a_2 + \cdots + a_n} {n} \ge \sqrt[n]{a_1a_2\cdots a_n}$
 
+## 4.7 化简常用公式
+
+- $\frac{x^n - 1}{x - 1} = x^{n-1} + x^{n-2} + \cdots + x + 1$
+
+    > 等比数列逆推
