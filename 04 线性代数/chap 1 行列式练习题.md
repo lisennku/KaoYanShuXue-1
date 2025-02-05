@@ -1,0 +1,1 @@
+<img src="chap 1 行列式练习题.assets/011299a0b7bf2ebf0a2aab094bd16bdf.jpg" alt="011299a0b7bf2ebf0a2aab094bd16bdf" style="zoom:33%;" />
