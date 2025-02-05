@@ -151,6 +151,10 @@
 
 - 范德蒙德行列式
 
+    - $\begin{vmatrix} 1 & 1 & 1 & \cdots & 1 \\ x_1 & x_2 & x_3 & \cdots & x_n \\ x_1^2 & x_2^2 & x_3^2 & \cdots & x_n^2 \\ \vdots & \vdots & \vdots & \ddots & \vdots\\ x_1^{n-1} & x_2^{n-1} & x_3^{n-1} & \cdots & x_n^{n-1} \end{vmatrix} = \displaystyle \prod_{1 \le j < i \le n}(x_i - x_j)$
+    - 连乘展开共有$\frac {n(n-1)} {2}$项
+
+
 # 5. 行列式按一行(列)展开
 
 - 余子式和代数余子式
@@ -226,11 +230,46 @@
     3. 利用按照行或列展开进行计算
 
 - 化三角形法
+
+    - 如果行列式的每行，或者每列，的元素之和都相等，可以将其他行列的元素加到第一行/列，然后提取公因子，则第一行/列转换为$1$，再继续化简行列式
+    - 计算$n$阶行列式$D = \begin{vmatrix} a & b & b & \cdots & b \\ b & a & b & \cdots & b \\ b & b & a & \cdots & b \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ b & b & b & \cdots & a\end{vmatrix}$
+
+        <img src="chap 1 行列式.assets/image-20250205091551454.png" alt="image-20250205091551454" style="zoom:70%;" />
+
 - 爪型行列式
+
+    - 如果行列式如下，则可以考虑将行或列的元素化为$0$，转化为三角行列式
+
+        ![image-20250205094856847](chap 1 行列式.assets/image-20250205094856847.png)
+    - 计算行列式$D = \begin{vmatrix} 1 & 1 & 1 & \cdots & 1 \\ 1 & -2 & 0 & \cdots & 0 \\ 1 & 0 & -3 & \cdots & 0\\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 1 & 0 & 0 & \cdots & -n \end{vmatrix}$
+
+        <img src="chap 1 行列式.assets/image-20250205101957096.png" alt="image-20250205101957096" style="zoom:67%;" />
+    - 计算行列式$D =\begin{vmatrix} 1 + a_1 & 1 & 1 & \cdots & 1 \\ 1 & 1 + a_2 & 1 & \cdots & 1\\ 1 & 1 & 1 + a_3 & \cdots & 1\\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 1 & 1 & 1 & \cdots & 1 + a_n \end{vmatrix} $
+
+        <img src="chap 1 行列式.assets/image-20250205103335467.png" alt="image-20250205103335467" style="zoom:67%;" />
+
 - 递推法
+
+    - 如果$n$阶行列式$D_n$可以表达为比其低一阶的行列式$D_{n-1}$的表达式，则可以使用递推法
+    - 计算行列式$D_n = \begin{vmatrix} x & -1 & 0 & \cdots & 0 &0 \\ 0 & x & -1 & \cdots & 0 & 0 \\ 0 & 0 & x & \cdots & 0 & 0 \\ \vdots & \vdots & \vdots & \ddots & \vdots & \vdots \\ 0 & 0& 0& \cdots & x & -1 \\ a_n & a_{n-1} & a_{n-2} & \cdots & a_2 & x +a_1\end{vmatrix}$
+
+        <img src="chap 1 行列式.assets/e207f5772e87592fa0eefa694d6bfdbf.jpg" alt="e207f5772e87592fa0eefa694d6bfdbf" style="zoom:25%;" />
+
 - 数学归纳法
+
+    - 证明范德蒙德行列式$\begin{vmatrix} 1 & 1 & 1 & \cdots & 1 \\ x_1 & x_2 & x_3 & \cdots & x_n \\ x_1^2 & x_2^2 & x_3^2 & \cdots & x_n^2 \\ \vdots & \vdots & \vdots & \ddots & \vdots\\ x_1^{n-1} & x_2^{n-1} & x_3^{n-1} & \cdots & x_n^{n-1} \end{vmatrix} = \displaystyle \prod_{1 \le j < i \le n}(x_i - x_j)$
+
+        <img src="chap 1 行列式.assets/4fe8cd7964abacda72d9b3a1b0e81428.jpg" alt="4fe8cd7964abacda72d9b3a1b0e81428" style="zoom:33%;" />
+
 - 拉普拉斯定理展开
 - 升阶法
+
+    - 通过在原行列式上新添加第一行和第一列，在保证行列值不变的前提下简化运算，需要确保添加的行列与原行列式中的行列没有线性关系，否则新行列式的值为$0$
+
+    - 计算行列式$D = \begin{vmatrix} x_1^2+1 & x_1x_2 & \cdots & x_1x_n \\ x_2x_1 & x_2^2+1 & \cdots & x_2x_n \\ \vdots & \vdots & \ddots & \vdots \\ x_nx_1 & x_nx_2 & \cdots & x_n^2 +1 \end{vmatrix}$
+
+        <img src="chap 1 行列式.assets/image-20250205154814986.png" alt="image-20250205154814986" style="zoom:50%;" />
+
 
 
 
@@ -253,5 +292,9 @@
     > \end{vmatrix}$不等于$0$时，方程组有唯一解，且唯一解为$x_1 = \frac {D_1} {D}, x_2 = \frac {D_2} {D},x_3 = \frac {D_3} {D}, \cdots, x_n = \frac {D_n} {D}$
     >
     > 其中$D_i$是用方程组等式右侧的$b_i$值，替换对应第$i$列的行列式，如，$D_2= \begin{vmatrix} a_{11} & b_1 & a_{13} & \cdots & a_{1n} \\ a_{21} & b_2 & a_{23} & \cdots & a_{2n} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ a_{n1} & b_n & a_{n3} & \cdots & a_{nn} \end{vmatrix}$
+
+    - 前提：
+        - 未知数个数，和方程个数相同
+        - 系数的行列式的值不为$0$
 
 - 
