@@ -11,3 +11,13 @@
 <img src="chap 1 行列式练习题.assets/98186d072ff307d4157f1c7b2fde8357.jpg" alt="98186d072ff307d4157f1c7b2fde8357" style="zoom:33%;" />
 
 <img src="chap 1 行列式练习题.assets/a33b536bfca03e7b813855942db3dc0c.jpg" alt="a33b536bfca03e7b813855942db3dc0c" style="zoom:33%;" />
+
+<img src="chap 1 行列式练习题.assets/bddbae54d1e4dab6ad6000457bb28c9a.jpg" alt="bddbae54d1e4dab6ad6000457bb28c9a" style="zoom:33%;" />
+
+<img src="chap 1 行列式练习题.assets/32293c7ebed2df929602c431f1287ed2.jpg" alt="32293c7ebed2df929602c431f1287ed2" style="zoom:33%;" />
+
+<img src="chap 1 行列式练习题.assets/563bb6c9539ac680dd5965a71eaadbf6.jpg" alt="563bb6c9539ac680dd5965a71eaadbf6" style="zoom:33%;" />
+
+<img src="chap 1 行列式练习题.assets/5d16d3e46f85863d44d1ad161104e7d4.jpg" alt="5d16d3e46f85863d44d1ad161104e7d4" style="zoom:33%;" />
+
+<img src="chap 1 行列式练习题.assets/371c2053c83441c95d6275597139e09d.jpg" alt="371c2053c83441c95d6275597139e09d" style="zoom:33%;" />
