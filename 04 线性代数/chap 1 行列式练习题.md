@@ -21,3 +21,9 @@
 <img src="chap 1 行列式练习题.assets/5d16d3e46f85863d44d1ad161104e7d4.jpg" alt="5d16d3e46f85863d44d1ad161104e7d4" style="zoom:33%;" />
 
 <img src="chap 1 行列式练习题.assets/371c2053c83441c95d6275597139e09d.jpg" alt="371c2053c83441c95d6275597139e09d" style="zoom:33%;" />
+
+<img src="chap 1 行列式练习题.assets/6ce8e64a07439c4eaa816945745d3f29.jpg" alt="6ce8e64a07439c4eaa816945745d3f29" style="zoom:33%;" />
+
+<img src="chap 1 行列式练习题.assets/a2a55182b1f3eb4659c0bd0332523541.jpg" alt="a2a55182b1f3eb4659c0bd0332523541" style="zoom:33%;" />
+
+<img src="chap 1 行列式练习题.assets/600619f070f27d520f3b9a79483fa822.jpg" alt="600619f070f27d520f3b9a79483fa822" style="zoom:33%;" />
