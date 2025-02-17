@@ -498,7 +498,7 @@
         - 上三角分块矩阵
             - $\begin{bmatrix} A_1 & * & \cdots & * \\ &A_2 & \cdots & *\\ && \ddots & \vdots \\ &&&A_k \end{bmatrix}$其中$A_1, A_2, \cdots, A_k$均为方阵
         - 下三角分块矩阵
-            - $\begin{bmatrix} A_1  \\ * &A_2 \\ \vdots& \vdots& \ddots &  \\ *&*&\cdots&A_k \end{bmatrix}$其中𝐴1,𝐴2,⋯,𝐴𝑘均为方阵
+            - $\begin{bmatrix} A_1  \\ * &A_2 \\ \vdots& \vdots& \ddots &  \\ *&*&\cdots&A_k \end{bmatrix}$其中$A_1, A_2, \cdots, A_k$均为方阵
         - 对角分块矩阵
             - $\begin{bmatrix} A_1  \\ &A_2\\ && \ddots  \\ &&&A_k \end{bmatrix}$其中$A_1, A_2, \cdots, A_k$均为方阵
 
@@ -520,10 +520,98 @@
         - $A=\begin{bmatrix} A_{11} & A_{12} & \cdots & A_{1t} \\ A_{21} & A_{22} & \cdots & A_{2t} \\ \vdots & \vdots & & \vdots \\ A_{s1} & A_{s2} & \cdots & A_{st} \\  \end{bmatrix}$，则$A^T=\begin{bmatrix} A_{11}^T & A_{21}^T & \cdots & A_{s1}^T \\ A_{12}^T & A_{22}^T & \cdots & A_{s2}^T \\ \vdots & \vdots & & \vdots \\ A_{1t}^T & A_{2t}^T & \cdots & A_{st}^T \\  \end{bmatrix}$
     - 分块矩阵的逆矩阵
         - 三角分块矩阵
+            - 设$A,B$为==方阵==，则，
+                - $\begin{bmatrix} A & C \\ O & B \end{bmatrix}$可逆，$\Leftrightarrow$$A,B$都可逆，且$\begin{bmatrix} A & C \\ O & B \end{bmatrix}^{-1} = \begin{bmatrix} A^{-1} & -A^{-1}CB^{-1} \\ O & B^{-1} \end{bmatrix}$
+                - $\begin{bmatrix} A & O \\ C & B \end{bmatrix}$可逆，$\Leftrightarrow$$A,B$都可逆，且$\begin{bmatrix} A & O \\ C & B \end{bmatrix}^{-1} = \begin{bmatrix} A^{-1} &O \\  -B^{-1}CA^{-1} & B^{-1} \end{bmatrix}$
         - 对角分块矩阵
+            - 设$A_1, A_2, \dots, A_k$为==方阵==，则
+                - $\begin{bmatrix} A_1  \\ &A_2\\ && \ddots  \\ &&&A_k \end{bmatrix}$可逆，$\Leftrightarrow$$A_1, A_2, \dots, A_k$均可逆，且$\begin{bmatrix} A_1  \\ &A_2\\ && \ddots  \\ &&&A_k \end{bmatrix}^{-1} = \begin{bmatrix} A_1^{-1}  \\ &A_2^{-1}\\ && \ddots  \\ &&&A_k^{-1} \end{bmatrix}$
+                - $\begin{bmatrix} &&&A_1  \\ &&A_2\\ & \dots \\ A_k \end{bmatrix}$可逆，$\Leftrightarrow$$A_1, A_2, \dots, A_k$均可逆，且$\begin{bmatrix} &&&A_1  \\ &&A_2\\ & \dots \\ A_k \end{bmatrix}^{-1} = \begin{bmatrix} &&&A_k^{-1} \\ && \dots\\ &A_2^{-1}   \\ A_1^{-1}  \end{bmatrix}$
     - 分块矩阵的行列式
+        - 设$A_1, A_2, \dots, A_k$为==方阵==，则
+            - $\begin{vmatrix}\begin{bmatrix} A_1 & * & \cdots & * \\ &A_2 & \cdots & *\\ && \ddots & \vdots \\ &&&A_k \end{bmatrix}\end{vmatrix} = |A_1| \bullet |A_2| \bullet  \cdots \bullet  |A_k| $
+            - $\begin{vmatrix}\begin{bmatrix} A_1  \\ * &A_2 \\ \vdots& \vdots& \ddots &  \\ *&*&\cdots&A_k \end{bmatrix}\end{vmatrix} = |A_1| \bullet |A_2| \bullet  \cdots \bullet  |A_k| $
+            - $\begin{vmatrix}\begin{bmatrix} A_1  \\ &A_2\\ && \ddots  \\ &&&A_k \end{bmatrix}\end{vmatrix} = |A_1| \bullet |A_2| \bullet  \cdots \bullet  |A_k| $
+        - 设$A$为$m$阶方阵，$B$为$n$阶方阵，则
+            - $\begin{vmatrix} \begin{bmatrix} O & A \\ B & C \end{bmatrix} \end{vmatrix} = (-1)^{mn}|A| \cdot |B|$
+            - $\begin{vmatrix} \begin{bmatrix} C & A \\ B & O \end{bmatrix} \end{vmatrix} = (-1)^{mn}|A| \cdot |B|$
+            - $\begin{vmatrix} \begin{bmatrix} O & A \\ B & O \end{bmatrix} \end{vmatrix} = (-1)^{mn}|A| \cdot |B|$
 
 # 14. 矩阵的秩
+
+- 秩的定义
+
+    - 矩阵的子式
+
+        > 设矩阵$A = (a_{ij})_{mn}$，在$A$中任取$k$行$k$列（$k \le min(m,n)$），位于这些行列交叉点处的$k^2$个元素，按照他们在$A$中的相对位置不变，得到的$k$阶==行列式==，称为矩阵$A$的一个$k$阶子式
+        >
+        > - 一阶子式即为元素本身
+        > - 若$A$为$n$阶矩阵，则$A$的$n$阶子式即为$|A|$
+
+    - 矩阵的秩
+
+        > 矩阵$A$中，==非零子式的最高阶数==，称为矩阵$A$的秩，记作$r(A)$
+        >
+        > - 零矩阵没有非零子式，规定零矩阵的秩为$0$
+        > - 若$A \ne O$，则$r(A) \ge 1$
+        > - 对任意矩阵$A_{m \times n}$，有$0 \le r(A) \le min(m,n)$
+
+        > 设矩阵$A = (a_{ij})_{mn}$
+        >
+        > - 若$r(A) = min(m,n)$，则称矩阵$A$为满秩矩阵
+        >
+        >     - 若$r(A) = m$，称为行满秩矩阵
+        >
+        >     - 若$r(A) = n$，称为列满秩矩阵
+        >
+        > - 若$r(A) < min(m,n)$，则称矩阵$A$为降秩矩阵
+
+        > 特别的，若$A$为$n$阶==方阵==，若$r(A) = n$，则称$A$为满秩矩阵，若$r(A) < n$，则称$A$为降秩矩阵
+        >
+        > 可通过定理推出，若$A$为$n$阶方阵
+        >
+        > - $A$满秩$\Leftrightarrow$$r(A)=n$ $\Leftrightarrow$ $|A| \ne 0$ $\Leftrightarrow$ $A$可逆 $\Leftrightarrow$ $A$为非奇异矩阵
+        > - $A$降秩$\Leftrightarrow$$r(A)<n$ $\Leftrightarrow$ $|A| = 0$ $\Leftrightarrow$ $A$不可逆 $\Leftrightarrow$ $A$为奇异矩阵
+
+- 矩阵的秩相关的结论
+
+    1. $r(A) = r(r >0) \Leftrightarrow$矩阵$A$中至少有一个$r$阶子式不等于零，而所有的$r+1$阶子式都为零，或者没有$r+1$阶子式
+    2. $r(A) \ge r \Leftrightarrow$矩阵$A$中至少有一个$r$阶子式不等于零
+    3. $r(A) < r \Leftrightarrow$矩阵$A$中所有$r$阶子式都为零
+    4. 转置矩阵，负矩阵，数乘矩阵的秩
+        1. $r(A) = r(A^T)$
+        2. $r(A) = r(-A)$
+        3. $r(A) = r(kA)\; k \ne 0$
+    5. $r(A) = 0 \Leftrightarrow A = O;\; r(A) \ne 0 \Leftrightarrow A \ne O$
+    6. 若$A \ne O$，则$A$任意两行或两列成比例$\Leftrightarrow r(A) = 1$
+    7. 若$A$为行阶梯矩阵，则$r(A) = A\text{中非零行的行数}$
+    8. 初等变换不改变矩阵的秩，即若$A \cong B$，有$r(A) = r(B)$
+    9. 若$A,B$为同型矩阵，则$A \cong B \Leftrightarrow r(A) = r(B)$
+    10. 若$A$的标准型为$D = \begin{bmatrix} 1 \\ & \ddots \\ && 1 \\ &&& 0 \\ &&&& \ddots \\ &&&&& 0\end{bmatrix}$，则$r(A)$等于$D$中$1$的个数
+    11. 若$A,B$同为$m \times n $阶矩阵，则$r(A+B) \le r(A)+r(B)$
+    12. 若$A$为$m \times n$阶矩阵，$B$为$n \times s$阶矩阵，则$r(A) + r(B) \textcolor{red}{-n} \le r(AB) \le min(r(A), r(B))$
+    13. 若$A$为$m \times n$阶矩阵，$B$为$n \times s$阶矩阵，且$AB = O$， 则$r(A) + r(B) \le n$
+    14. $r(A^TA) = r(AA^T) = r(A)$
+    15. 若$A$为可逆方阵，则$r(AB) = r(B)\;\; r(CA) = r(C)$
+    16. 若$A$为$n$阶方阵$(n \ge 2)$，$A^{\ast}$为$A$的伴随矩阵，则$r(A^{\ast}) =\begin{cases} n, &r(A) = n \\ 1, &r(A)=n-1\\0,&r(A) < n-1\end{cases}$
+
+- 求解矩阵的秩
+
+    - 定义法
+
+        > 若矩阵$A$中有不等于零的$r$阶子式，且所有$r+1$阶子式都为零，或者没有$r+1$阶子式，则$r(A) = A$
+
+    - 初等变换法
+
+        > 利用矩阵的初等行变换，将矩阵化为行阶梯矩阵，则行阶梯矩阵中非零行的行数即为矩阵的秩
+
+    - 行列式法
+
+        > 若$A$为$n$阶方阵，求$|A|$，若$\begin{cases} 若|A| \ne 0 & r(A) = n \\ 若|A| = 0 & r(A) < n \end{cases}$
+
+    - 利用矩阵秩的结论
+
+        
 
 
 
