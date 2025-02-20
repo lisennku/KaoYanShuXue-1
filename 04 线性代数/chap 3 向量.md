@@ -258,8 +258,50 @@
 
 ## 5.3 极大线性无关组的求法 - 矩阵初等变换法
 
+> 求向量组$\alpha_1, \alpha_2, \cdots, \alpha_s$的一个极大线性无关组，并将其余向量用极大线性无关组表示出来，其步骤如下：
 
-
-
+1. 构造矩阵$A$
+    - 若$\alpha_1, \alpha_2, \cdots, \alpha_s$为列向量，则矩阵$A = (\alpha_1, \alpha_2, \cdots, \alpha_s)$
+    - 若$\alpha_1, \alpha_2, \cdots, \alpha_s$为列向量，则矩阵$A = (\alpha_1^T, \alpha_2^T, \cdots, \alpha_s^T)$
+2. 对矩阵$A$进行初等行变换，化为行阶梯矩阵$B$，则$B$的==首非零元素所在的列==，==对应于向量组$\alpha_1, \alpha_2, \cdots, \alpha_s$中的向量==，即为向量组$\alpha_1, \alpha_2, \cdots, \alpha_s$的一个极大线性无关组
+3. 再对行阶梯矩阵$B$进行初等行变换，化为行简化阶梯矩阵$C$，则$C$中列向量的线性关系即为$A$中列向量的线性关系，也即$\alpha_1, \alpha_2, \cdots, \alpha_s$的线性关系
 
 # 6. 向量组的秩
+
+## 6.1 向量组秩的定义
+
+> 向量组$\alpha_1, \alpha_2, \cdots, \alpha_s$的任一极大线性无关组中所含向量的个数，称为向量组$\alpha_1, \alpha_2, \cdots, \alpha_s$的秩，记为$r(\alpha_1, \alpha_2, \cdots, \alpha_s)$
+
+- 规定，零向量组的秩为$0$
+
+## 6.2 向量组秩的性质和结论
+
+1. 向量组的秩是唯一的，等于极大线性无关组中所含向量个数
+
+2. 向量组$\alpha_1, \alpha_2, \cdots, \alpha_s$线性无关$\Leftrightarrow r(\alpha_1, \alpha_2, \cdots, \alpha_s) = s$ 因为行阶梯矩阵没有零行，所以根据矩阵初等变换求向量组的极大线性无关组，此时全部变量都属于极大线性无关组
+
+    向量组$\alpha_1, \alpha_2, \cdots, \alpha_s$线性相关$\Leftrightarrow r(\alpha_1, \alpha_2, \cdots, \alpha_s) < s$
+
+3. 若向量组$(I)$可由向量组$(II)$线性表示，则$r(I) \le r(II)$
+
+4. 等价的向量组的秩相等
+
+5. 向量组的秩$\le$向量的个数；
+
+    向量组的秩$\le$向量的维数
+
+6. 若向量组的秩为$r$，则向量组中必有$r$个向量线性无关，而任意多于$r$个向量都线性相关
+
+7. 若向量组的秩为$r(r > 0)$，则任意含$r$个向量的线性无关的部分组都是向量组的极大线性无关组
+
+## 6.3 向量组秩的求法
+
+> 根据矩阵的秩等于其行向量组的秩，也等于其列向量组的秩，将求向量组的秩转为求矩阵的秩
+
+1. 构造矩阵$A$
+
+    - 若$\alpha_1, \alpha_2, \cdots, \alpha_s$为列向量，则矩阵$A = (\alpha_1, \alpha_2, \cdots, \alpha_s)$
+
+    - 若$\alpha_1, \alpha_2, \cdots, \alpha_s$为列向量，则矩阵$A = (\alpha_1^T, \alpha_2^T, \cdots, \alpha_s^T)$
+
+2. 求矩阵$A$的秩$r(A)$，而$r(A) = r(\alpha_1, \alpha_2, \cdots, \alpha_s)$ 
