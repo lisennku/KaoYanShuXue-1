@@ -196,5 +196,10 @@
 
 # 6. 向量的内积
 
+## 6.1 向量内积
+
+- $n$维列向量$\alpha = \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\x_n \end{bmatrix},\beta = \begin{bmatrix} y_1 \\ y_2 \\ \vdots \\y_n \end{bmatrix}$的内积为，$(\alpha,\beta) = \alpha^T \beta = x_1y_1 + x_2y_2 + \cdots+ x_ny_n$ 
+- $n$维行向量 $\alpha = \begin{bmatrix} x_1 & x_2 & \cdots &x_n \end{bmatrix},\beta = \begin{bmatrix} y_1 & y_2 & \cdots &y_n \end{bmatrix}$的内积为，$(\alpha,\beta) = \alpha \beta^T = x_1y_1 + x_2y_2 + \cdots+ x_ny_n$  
+
 # 7. 实对称矩阵的对角化
 
