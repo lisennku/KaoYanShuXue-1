@@ -244,6 +244,8 @@
 
 # 6. 方阵的行列式
 
+> 做题时，在写矩阵的行列式前，要知道到底是不是方阵
+
 > 设$n$阶方阵$A = \begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn}\end{bmatrix}$，则$A$的行列式为$|A|\begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn}\end{vmatrix}$
 >
 > > 矩阵$A$的行列式$|A|$为一个数
@@ -308,6 +310,8 @@
         - 再结合行列式$|A|$等于元素$a_{ij}$和$A_{ij}$的和，可以求出相关题目
 
 # 8. 逆矩阵
+
+> 做题时，在写$A^{-1}$前，要么题干说了$A$可逆，要么自己证明了$|A| \ne 0$
 
 - 定义
 
