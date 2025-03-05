@@ -1,0 +1,1 @@
+<img src="chap 2 练习题.assets/image-20250305172753544.png" alt="image-20250305172753544" style="zoom:33%;" />
