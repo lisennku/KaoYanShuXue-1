@@ -9,3 +9,13 @@
  *  使用拉普拉斯定理，按行展开，可以输入行号
  *  默认最大的行列式阶数为20
  */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(){
+
+    return 0;
+}
