@@ -1,3 +1,6 @@
+# 
+[TOC]
+
 # 1. 矩阵的概念
 
 ## 1.1 矩阵的概念
@@ -478,259 +481,268 @@
 
 # 11. 矩阵的等价$\cong$
 
-- 矩阵等价定义
+## 11.1 矩阵等价定义
 
-    > 若矩阵$A$可以经过有限次初等变换化为矩阵$B$，则说$A$与$B$等价，记为$A \cong B$
-    >
-    > > $A \cong B \Leftrightarrow A \rightarrow B$
+> 若矩阵$A$可以经过有限次初等变换化为矩阵$B$，则说$A$与$B$等价，记为$A \cong B$
+>
+> > $A \cong B \Leftrightarrow A \rightarrow B$
 
-    - <u>*等价矩阵一定是同型矩阵*</u>
+- <u>*等价矩阵一定是同型矩阵*</u>
 
-- 矩阵等价的性质
+## 11.2 矩阵等价的性质
 
-    - 反身性，对任何矩阵$A$，都有$A \cong A$
-    - 对称性，若矩阵$A \cong B$，则$B \cong A$
-    - 传递性，若矩阵$A \cong B$，$B \cong A$，则$A \cong C$
+- 反身性，对任何矩阵$A$，都有$A \cong A$
+- 对称性，若矩阵$A \cong B$，则$B \cong A$
+- 传递性，若矩阵$A \cong B$，$B \cong A$，则$A \cong C$
 
-- 矩阵等价的结论
+## 11.3 矩阵等价的结论
 
-    1. 任一个矩阵$A_{m \times n}$都和其标准形矩阵$D = \begin{bmatrix} 1 \\ & \ddots \\ && 1 \\ &&& 0 \\ &&&& \ddots \\ &&&&& 0\end{bmatrix}_{m \times n}$等价
+1. 任一个矩阵$A_{m \times n}$都和其标准形矩阵$D = \begin{bmatrix} 1 \\ & \ddots \\ && 1 \\ &&& 0 \\ &&&& \ddots \\ &&&&& 0\end{bmatrix}_{m \times n}$等价
+
+2. 矩阵$A,B$等价的充要条件（都是同型矩阵）
+    1. 存在一些列初等矩阵$P_1, P_2,\cdots,P_s;\; Q_1, Q_2, \cdots, Q_t$，使$P_1 P_2\cdots P_s A Q_1,Q_2\cdots Q_t=B$
+    2. 存在可逆矩阵$P,Q$，使$PAQ=B$
+    3. $r(A) = r(B)$
     
-    2. 矩阵$A,B$等价的充要条件（都是同型矩阵）
-        1. 存在一些列初等矩阵$P_1, P_2,\cdots,P_s;\; Q_1, Q_2, \cdots, Q_t$，使$P_1 P_2\cdots P_s A Q_1,Q_2\cdots Q_t=B$
-        2. 存在可逆矩阵$P,Q$，使$PAQ=B$
-        3. $r(A) = r(B)$
-        
-    3. 若矩阵$A \cong B$，则
-        1. $A$与$B$的标准形相同
-        2. $A$与$B$的秩相同，即$r(A)=r(B)$
-        
-    4. 若$A,B$为同阶方阵，且$A \cong B$，则，
-        1. $|A| = k|B|\;(k \ne 0)$                        由性质2-1，或性质2-2，结合矩阵行列式性质即可知
-        2. $A,B$同时可逆，或同时不可逆     由性质4-1，结合矩阵的行列式为不为$0$与可逆与否即可知
-        
-    5. 设$A$为$n$阶方阵，则$A$可逆的充要条件为
-        1. $A \cong E$         
-        
-            > - 充分性：
-            >
-            >     - $$
-            >         \begin{align*}
-            >         & A \cong E \rightarrow \\ &PAQ = E\rightarrow \\ &|PAQ| = k|E|\rightarrow \\ &|P|\cdot |A| \cdot |Q| = k|E|\rightarrow\\ & \because |Q| \ne 0 ,|P| \ne 0, |E| \ne0 \rightarrow\\ & \therefore |A| \ne 0 \rightarrow \\ &\therefore A\text{可逆} 
-            >         \end{align*}
-            >         $$
-            >
-            > - 必要性：
-            >
-            >     - $$
-            >         \begin{align*}
-            >         & \because A\text{可逆}\rightarrow \\ & \therefore |A| \ne 0 \rightarrow \\ & \because A \cong A\text{的标准型，记为S}\rightarrow \\ & \therefore PAQ = S\rightarrow \\ & |P|\cdot |A| \cdot |Q| = |S|\rightarrow \\ &\because |A|\ne 0\rightarrow \\ &\therefore |S| \ne 0 \rightarrow \\ & \text{矩阵} S \text{的主对角线没有0元素}\rightarrow \\ & \therefore \text{标准型矩阵是一个单位阵}
-            >         \end{align*}
-            >         $$
-        
-        2. $A$可以表示为有限个初等矩阵的乘积
-        
-            - <font color=red>可逆矩阵必可表示为有限个初等矩阵的乘积</font>
+3. 若矩阵$A \cong B$，则
+    1. $A$与$B$的标准形相同
+    2. $A$与$B$的秩相同，即$r(A)=r(B)$
+    
+4. 若$A,B$为同阶方阵，且$A \cong B$，则，
+    1. $|A| = k|B|\;(k \ne 0)$                        由性质2-1，或性质2-2，结合矩阵行列式性质即可知
+    2. $A,B$同时可逆，或同时不可逆     由性质4-1，结合矩阵的行列式为不为$0$与可逆与否即可知
+    
+5. 设$A$为$n$阶方阵，则$A$可逆的充要条件为
+    1. $A \cong E$         
+    
+        > - 充分性：
+        >
+        >     - $$
+        >         \begin{align*}
+        >         & A \cong E \rightarrow \\ &PAQ = E\rightarrow \\ &|PAQ| = k|E|\rightarrow \\ &|P|\cdot |A| \cdot |Q| = k|E|\rightarrow\\ & \because |Q| \ne 0 ,|P| \ne 0, |E| \ne0 \rightarrow\\ & \therefore |A| \ne 0 \rightarrow \\ &\therefore A\text{可逆} 
+        >         \end{align*}
+        >         $$
+        >
+        > - 必要性：
+        >
+        >     - $$
+        >         \begin{align*}
+        >         & \because A\text{可逆}\rightarrow \\ & \therefore |A| \ne 0 \rightarrow \\ & \because A \cong A\text{的标准型，记为S}\rightarrow \\ & \therefore PAQ = S\rightarrow \\ & |P|\cdot |A| \cdot |Q| = |S|\rightarrow \\ &\because |A|\ne 0\rightarrow \\ &\therefore |S| \ne 0 \rightarrow \\ & \text{矩阵} S \text{的主对角线没有0元素}\rightarrow \\ & \therefore \text{标准型矩阵是一个单位阵}
+        >         \end{align*}
+        >         $$
+    
+    2. $A$可以表示为有限个初等矩阵的乘积
+    
+        - <font color=red>可逆矩阵必可表示为有限个初等矩阵的乘积</font>
 
 # 12. 初等变换法求逆矩阵
 
-- 初等行变换求逆矩阵的原理
-    $$
-    \begin{align*}
-    & \text{若}A\text{可逆，则}A^{-1}\text{也可逆} \\
-    & \text{根据可逆矩阵与初等矩阵的关系，可知，若}P_1\cdots P_s\text{为初等矩阵则有}\\
-    & A^{-1}=P_1\cdots P_s \cdots (1)\\
-    & \text{也即，}P_1\cdots P_s \textcolor{red}{E}=A^{-1}\cdots (2)\\
-    & \text{对等式1右乘}A\text{，则有}P_1\cdots P_sA = A^{-1}A = E \cdots(3)\\
-    & P_1\cdots P_sA = E \\
-    & P_1\cdots P_s \textcolor{red}{E}=A^{-1}\\
-    &\text{观察上述两式可知，对}A \text{进行同一批初等行变换，可化为}E\\
-    & \text{对}E\text{进行同一批初等行变换，可化为}A^{-1}\\
-    & \text{因此，可将}A\text{和}E\text{拼接为}(A\vdots E){，进行同样的初等行变换，得到}(E \vdots A^{-1})
-    \end{align*}
-    $$
-    
-- 初等变换法求逆矩阵步骤  <u>*适用于高阶矩阵*</u>
+## 12.1 初等行变换求逆矩阵的原理
+$$
+\begin{align*}
+& \text{若}A\text{可逆，则}A^{-1}\text{也可逆} \\
+& \text{根据可逆矩阵与初等矩阵的关系，可知，若}P_1\cdots P_s\text{为初等矩阵则有}\\
+& A^{-1}=P_1\cdots P_s \cdots (1)\\
+& \text{也即，}P_1\cdots P_s \textcolor{red}{E}=A^{-1}\cdots (2)\\
+& \text{对等式1右乘}A\text{，则有}P_1\cdots P_sA = A^{-1}A = E \cdots(3)\\
+& P_1\cdots P_sA = E \\
+& P_1\cdots P_s \textcolor{red}{E}=A^{-1}\\
+&\text{观察上述两式可知，对}A \text{进行同一批初等行变换，可化为}E\\
+& \text{对}E\text{进行同一批初等行变换，可化为}A^{-1}\\
+& \text{因此，可将}A\text{和}E\text{拼接为}(A\vdots E){，进行同样的初等行变换，得到}(E \vdots A^{-1})
+\end{align*}
+$$
 
-    > 先处理第一列，再处理第二列，以此类推
+## 12.2 初等变换法求逆矩阵步骤  <u>*适用于高阶矩阵*</u>
 
-    - 利用矩阵$A$和同阶单位矩阵$E$，做$n \times 2n$矩阵
-    - 对$(A \vdots E)$进行初等<font color=red style="font-weight: bold">行</font>变换，将其化为<font color=red style="font-weight: bold">行简化阶梯形矩阵</font>
-        - $(A \vdots E) \stackrel {\text{行}} {\longrightarrow}(B \vdots D)$
-            - $(B \vdots D)$是行简化阶梯形矩阵
-            - 对应的有$A \stackrel {\text{行}} {\longrightarrow}B$，$E \stackrel {\text{行}} {\longrightarrow} D$
-    - 结果判定，$\begin{cases} & \text{若} B=E, \text{则}A\text{可逆},\text{且}A^{-1}=D  \\ & \text{若}B \ne E,\text{则}A\text{不可逆} \end{cases}$
+> 先处理第一列，再处理第二列，以此类推
 
-    > 在对$(A \vdots E)$进行初等行变换时，如果过程中发现$A$对应的左子块的行列式为$0$，即可终止算法并判断$A$不可逆
+- 利用矩阵$A$和同阶单位矩阵$E$，做$n \times 2n$矩阵
+- 对$(A \vdots E)$进行初等<font color=red style="font-weight: bold">行</font>变换，将其化为<font color=red style="font-weight: bold">行简化阶梯形矩阵</font>
+    - $(A \vdots E) \stackrel {\text{行}} {\longrightarrow}(B \vdots D)$
+        - $(B \vdots D)$是行简化阶梯形矩阵
+        - 对应的有$A \stackrel {\text{行}} {\longrightarrow}B$，$E \stackrel {\text{行}} {\longrightarrow} D$
+- 结果判定，$\begin{cases} & \text{若} B=E, \text{则}A\text{可逆},\text{且}A^{-1}=D  \\ & \text{若}B \ne E,\text{则}A\text{不可逆} \end{cases}$
 
-- 初等变换法求矩阵方程
+> 在对$(A \vdots E)$进行初等行变换时，如果过程中发现$A$对应的左子块的行列式为$0$，即可终止算法并判断$A$不可逆
 
-    - $AX=B$
-        - 将$A$和$B$拼接为矩阵$(A \vdots B)$
-        - 进行初等==行==变换，当$A$对应的左子块变为$E$时，右子块就是$X$的解
-    - $XA=B$
-        - 将$A$和$B$拼接为矩阵$\begin{bmatrix}A \\ B\end{bmatrix}$
-        - 进行初等==列==变换，当$A$对应的上子块变为$E$时，下子块就是$X$的解
+## 12.3 初等变换法求矩阵方程
+
+- $AX=B$
+    - 将$A$和$B$拼接为矩阵$(A \vdots B)$
+    - 进行初等==行==变换，当$A$对应的左子块变为$E$时，右子块就是$X$的解
+- $XA=B$
+    - 将$A$和$B$拼接为矩阵$\begin{bmatrix}A \\ B\end{bmatrix}$
+    - 进行初等==列==变换，当$A$对应的上子块变为$E$时，下子块就是$X$的解
 
 # 13. 分块矩阵
 
-- 分块矩阵的定义
+## 13.1 分块矩阵的定义
 
-    - 定义
+- 定义
 
-        > 设$A$是一个矩阵，将$A$用若干纵线和横线分成许多小矩阵，每个小矩阵称为矩阵$A$的子块，该过程就是分块过程，分块以后的矩阵$A$称为分块矩阵
+    > 设$A$是一个矩阵，将$A$用若干纵线和横线分成许多小矩阵，每个小矩阵称为矩阵$A$的子块，该过程就是分块过程，分块以后的矩阵$A$称为分块矩阵
 
-        - 按行分块后，得到的四个行向量称为矩阵$A$的行向量组
-        - 按列分块后，得到的四个列向量称为矩阵$A$的列向量组
+    - 按行分块后，得到的四个行向量称为矩阵$A$的行向量组
+    - 按列分块后，得到的四个列向量称为矩阵$A$的列向量组
 
-    - 特殊的分块矩阵
+- 特殊的分块矩阵
 
-        - 上三角分块矩阵
-            - $\begin{bmatrix} A_1 & * & \cdots & * \\ &A_2 & \cdots & *\\ && \ddots & \vdots \\ &&&A_k \end{bmatrix}$其中$A_1, A_2, \cdots, A_k$均为方阵
-        - 下三角分块矩阵
-            - $\begin{bmatrix} A_1  \\ * &A_2 \\ \vdots& \vdots& \ddots &  \\ *&*&\cdots&A_k \end{bmatrix}$其中$A_1, A_2, \cdots, A_k$均为方阵
-        - 对角分块矩阵
-            - $\begin{bmatrix} A_1  \\ &A_2\\ && \ddots  \\ &&&A_k \end{bmatrix}$其中$A_1, A_2, \cdots, A_k$均为方阵
+    - 上三角分块矩阵
+        - $\begin{bmatrix} A_1 & * & \cdots & * \\ &A_2 & \cdots & *\\ && \ddots & \vdots \\ &&&A_k \end{bmatrix}$其中$A_1, A_2, \cdots, A_k$均为方阵
+    - 下三角分块矩阵
+        - $\begin{bmatrix} A_1  \\ * &A_2 \\ \vdots& \vdots& \ddots &  \\ *&*&\cdots&A_k \end{bmatrix}$其中$A_1, A_2, \cdots, A_k$均为方阵
+    - 对角分块矩阵
+        - $\begin{bmatrix} A_1  \\ &A_2\\ && \ddots  \\ &&&A_k \end{bmatrix}$其中$A_1, A_2, \cdots, A_k$均为方阵
 
-- 分块矩阵的运算
+## 13.2 分块矩阵的运算
 
-    - 分块矩阵的加法和数乘
-        - 设矩阵$A_{m \times n}$和$B_{m \times n}$==按照同一方式分块==，
+### 13.2.1 分块矩阵的加法和数乘
+- 设矩阵$A_{m \times n}$和$B_{m \times n}$==按照同一方式分块==，
+
+    $A=\begin{bmatrix} A_{11} & A_{12} & \cdots & A_{1t} \\ A_{21} & A_{22} & \cdots & A_{2t} \\ \vdots & \vdots & & \vdots \\ A_{s1} & A_{s2} & \cdots & A_{st} \\  \end{bmatrix}$，$B=\begin{bmatrix} B_{11} & B_{12} & \cdots & B_{1t} \\ B_{21} & B_{22} & \cdots & B_{2t} \\ \vdots & \vdots & & \vdots \\ B_{s1} &B_{s2} & \cdots & B_{st} \\  \end{bmatrix}$，则
+
+    - $A+B = \begin{bmatrix} A_{11} + B_{11} & A_{12} + B_{12} & \cdots & A_{1t}  + B_{1t}\\ A_{21} + B_{21} & A_{22} + B_{22} & \cdots & A_{2t} + B_{2t} \\ \vdots & \vdots & & \vdots \\ A_{s1}  + B_{s1}& A_{s2}  + B_{s2}& \cdots & A_{st}  + B_{st}\\  \end{bmatrix}$
+    - $kA = A=\begin{bmatrix} kA_{11} & kA_{12} & \cdots & kA_{1t} \\ kA_{21} & kA_{22} & \cdots & kA_{2t} \\ \vdots & \vdots & & \vdots \\ kA_{s1} & kA_{s2} & \cdots & kA_{st} \\  \end{bmatrix}$
+
+### 13.2.2 分块矩阵的乘法
+- 设矩阵$A_{m \times l}$和$B_{l \times n}$==把$A,B$分块，使得$A$的列分块和$B$的行分块相同==，也即$A$的列分块 每个子块的列数，与$B$的行分块的每个子块的行数，对应相等
+  
+    $A=\begin{bmatrix} A_{11} & A_{12} & \cdots & A_{1t} \\ A_{21} & A_{22} & \cdots & A_{2t} \\ \vdots & \vdots & & \vdots \\ A_{s1} & A_{s2} & \cdots & A_{st} \\  \end{bmatrix}$，$B=\begin{bmatrix} B_{11} & B_{12} & \cdots & B_{1r} \\ B_{21} & B_{22} & \cdots & B_{2r} \\ \vdots & \vdots & & \vdots \\ B_{t1} &B_{t2} & \cdots & B_{tr} \\  \end{bmatrix}$，则
+    
+    - $AB = A=\begin{bmatrix} C_{11} & C_{12} & \cdots & C_{1r} \\ C_{21} & C_{22} & \cdots & C_{2r} \\ \vdots & \vdots & & \vdots \\ C_{s1} & A_{s2} & \cdots & A_{sr} \\  \end{bmatrix}$
+        - 其中，$C_{ij} = A_{i1}B_{1j} + A_{i2}B_{2j} + \cdots + A_{it}B_{tj}\;\; i = 1,2,\cdots,s;\; j = 1,2,\cdots,r$
+            - $A$和$B$因为都是小矩阵，因此顺序不可颠倒
+    
+- 特别的，如果$A,B$是同阶对角分块矩阵，且分块方式相同，$\begin{bmatrix} A_1  \\ &A_2\\ && \ddots  \\ &&&A_k \end{bmatrix}$，$\begin{bmatrix} B_1  \\ &B_2\\ && \ddots  \\ &&&B_k \end{bmatrix}$，则
+    - $AB = \begin{bmatrix} A_1B_1  \\ &A_2B_2\\ && \ddots  \\ &&&A_kB_k \end{bmatrix}$
+    - $A^m = \begin{bmatrix} A_1^m  \\ &A_2^m\\ && \ddots  \\ &&&A_k^m \end{bmatrix}$    - 设矩阵$A_{m \times l}$和$B_{l \times n}$==把$A,B$分块，使得$A$的列分块和$B$的行分块相同==，也即$A$的列分块 每个子块的列数，与$B$的行分块的每个子块的行数，对应相等
+      
+        $A=\begin{bmatrix} A_{11} & A_{12} & \cdots & A_{1t} \\ A_{21} & A_{22} & \cdots & A_{2t} \\ \vdots & \vdots & & \vdots \\ A_{s1} & A_{s2} & \cdots & A_{st} \\  \end{bmatrix}$，$B=\begin{bmatrix} B_{11} & B_{12} & \cdots & B_{1r} \\ B_{21} & B_{22} & \cdots & B_{2r} \\ \vdots & \vdots & & \vdots \\ B_{t1} &B_{t2} & \cdots & B_{tr} \\  \end{bmatrix}$，则
         
-            $A=\begin{bmatrix} A_{11} & A_{12} & \cdots & A_{1t} \\ A_{21} & A_{22} & \cdots & A_{2t} \\ \vdots & \vdots & & \vdots \\ A_{s1} & A_{s2} & \cdots & A_{st} \\  \end{bmatrix}$，$B=\begin{bmatrix} B_{11} & B_{12} & \cdots & B_{1t} \\ B_{21} & B_{22} & \cdots & B_{2t} \\ \vdots & \vdots & & \vdots \\ B_{s1} &B_{s2} & \cdots & B_{st} \\  \end{bmatrix}$，则
+        - $AB = A=\begin{bmatrix} C_{11} & C_{12} & \cdots & C_{1r} \\ C_{21} & C_{22} & \cdots & C_{2r} \\ \vdots & \vdots & & \vdots \\ C_{s1} & A_{s2} & \cdots & A_{sr} \\  \end{bmatrix}$
+            - 其中，$C_{ij} = A_{i1}B_{1j} + A_{i2}B_{2j} + \cdots + A_{it}B_{tj}\;\; i = 1,2,\cdots,s;\; j = 1,2,\cdots,r$
+                - $A$和$B$因为都是小矩阵，因此顺序不可颠倒
         
-            - $A+B = \begin{bmatrix} A_{11} + B_{11} & A_{12} + B_{12} & \cdots & A_{1t}  + B_{1t}\\ A_{21} + B_{21} & A_{22} + B_{22} & \cdots & A_{2t} + B_{2t} \\ \vdots & \vdots & & \vdots \\ A_{s1}  + B_{s1}& A_{s2}  + B_{s2}& \cdots & A_{st}  + B_{st}\\  \end{bmatrix}$
-            - $kA = A=\begin{bmatrix} kA_{11} & kA_{12} & \cdots & kA_{1t} \\ kA_{21} & kA_{22} & \cdots & kA_{2t} \\ \vdots & \vdots & & \vdots \\ kA_{s1} & kA_{s2} & \cdots & kA_{st} \\  \end{bmatrix}$
+    - 特别的，如果$A,B$是同阶对角分块矩阵，且分块方式相同，$\begin{bmatrix} A_1  \\ &A_2\\ && \ddots  \\ &&&A_k \end{bmatrix}$，$\begin{bmatrix} B_1  \\ &B_2\\ && \ddots  \\ &&&B_k \end{bmatrix}$，则
+        - $AB = \begin{bmatrix} A_1B_1  \\ &A_2B_2\\ && \ddots  \\ &&&A_kB_k \end{bmatrix}$
+        - $A^m = \begin{bmatrix} A_1^m  \\ &A_2^m\\ && \ddots  \\ &&&A_k^m \end{bmatrix}$
+
+### 13.2.3 分块矩阵的转置
+- 分块矩阵的转置，是将各行子块依次转为列子块，并且每个子块内部也要进行转置
+- $A=\begin{bmatrix} A_{11} & A_{12} & \cdots & A_{1t} \\ A_{21} & A_{22} & \cdots & A_{2t} \\ \vdots & \vdots & & \vdots \\ A_{s1} & A_{s2} & \cdots & A_{st} \\  \end{bmatrix}$，则$A^T=\begin{bmatrix} A_{11}^T & A_{21}^T & \cdots & A_{s1}^T \\ A_{12}^T & A_{22}^T & \cdots & A_{s2}^T \\ \vdots & \vdots & & \vdots \\ A_{1t}^T & A_{2t}^T & \cdots & A_{st}^T \\  \end{bmatrix}$
+
+### 13.2.4 分块矩阵的逆矩阵
+- 三角分块矩阵
+    - 设$A,B$为==方阵==，则，
+        - $\begin{bmatrix} A & C \\ O & B \end{bmatrix}$可逆，$\Leftrightarrow$$A,B$都可逆，且$\begin{bmatrix} A & C \\ O & B \end{bmatrix}^{-1} = \begin{bmatrix} A^{-1} & -A^{-1}CB^{-1} \\ O & B^{-1} \end{bmatrix}$
+        - $\begin{bmatrix} A & O \\ C & B \end{bmatrix}$可逆，$\Leftrightarrow$$A,B$都可逆，且$\begin{bmatrix} A & O \\ C & B \end{bmatrix}^{-1} = \begin{bmatrix} A^{-1} &O \\  -B^{-1}CA^{-1} & B^{-1} \end{bmatrix}$
+- 对角分块矩阵
+    - 设$A_1, A_2, \dots, A_k$为==方阵==，则
+      
+        > 主对角线分块矩阵的逆矩阵，是主对角线上子块的逆矩阵
         
-    - 分块矩阵的乘法
-        - 设矩阵$A_{m \times l}$和$B_{l \times n}$==把$A,B$分块，使得$A$的列分块和$B$的行分块相同==，也即$A$的列分块 每个子块的列数，与$B$的行分块的每个子块的行数，对应相等
-          
-            $A=\begin{bmatrix} A_{11} & A_{12} & \cdots & A_{1t} \\ A_{21} & A_{22} & \cdots & A_{2t} \\ \vdots & \vdots & & \vdots \\ A_{s1} & A_{s2} & \cdots & A_{st} \\  \end{bmatrix}$，$B=\begin{bmatrix} B_{11} & B_{12} & \cdots & B_{1r} \\ B_{21} & B_{22} & \cdots & B_{2r} \\ \vdots & \vdots & & \vdots \\ B_{t1} &B_{t2} & \cdots & B_{tr} \\  \end{bmatrix}$，则
-            
-            - $AB = A=\begin{bmatrix} C_{11} & C_{12} & \cdots & C_{1r} \\ C_{21} & C_{22} & \cdots & C_{2r} \\ \vdots & \vdots & & \vdots \\ C_{s1} & A_{s2} & \cdots & A_{sr} \\  \end{bmatrix}$
-                - 其中，$C_{ij} = A_{i1}B_{1j} + A_{i2}B_{2j} + \cdots + A_{it}B_{tj}\;\; i = 1,2,\cdots,s;\; j = 1,2,\cdots,r$
-                    - $A$和$B$因为都是小矩阵，因此顺序不可颠倒
-            
-        - 特别的，如果$A,B$是同阶对角分块矩阵，且分块方式相同，$\begin{bmatrix} A_1  \\ &A_2\\ && \ddots  \\ &&&A_k \end{bmatrix}$，$\begin{bmatrix} B_1  \\ &B_2\\ && \ddots  \\ &&&B_k \end{bmatrix}$，则
-            - $AB = \begin{bmatrix} A_1B_1  \\ &A_2B_2\\ && \ddots  \\ &&&A_kB_k \end{bmatrix}$
-            - $A^m = \begin{bmatrix} A_1^m  \\ &A_2^m\\ && \ddots  \\ &&&A_k^m \end{bmatrix}$
+        - $\begin{bmatrix} A_1  \\ &A_2\\ && \ddots  \\ &&&A_k \end{bmatrix}$可逆，$\Leftrightarrow$$A_1, A_2, \dots, A_k$均可逆，且$\begin{bmatrix} A_1  \\ &A_2\\ && \ddots  \\ &&&A_k \end{bmatrix}^{-1} = \begin{bmatrix} A_1^{-1}  \\ &A_2^{-1}\\ && \ddots  \\ &&&A_k^{-1} \end{bmatrix}$
         
-    - 分块矩阵的转置
-        - 分块矩阵的转置，是将各行子块依次转为列子块，并且每个子块内部也要进行转置
-        - $A=\begin{bmatrix} A_{11} & A_{12} & \cdots & A_{1t} \\ A_{21} & A_{22} & \cdots & A_{2t} \\ \vdots & \vdots & & \vdots \\ A_{s1} & A_{s2} & \cdots & A_{st} \\  \end{bmatrix}$，则$A^T=\begin{bmatrix} A_{11}^T & A_{21}^T & \cdots & A_{s1}^T \\ A_{12}^T & A_{22}^T & \cdots & A_{s2}^T \\ \vdots & \vdots & & \vdots \\ A_{1t}^T & A_{2t}^T & \cdots & A_{st}^T \\  \end{bmatrix}$
+        > 副对角线分块矩阵的逆矩阵，是副对角线上子块的逆矩阵，但是要调转顺序
         
-    - 分块矩阵的逆矩阵
-        - 三角分块矩阵
-            - 设$A,B$为==方阵==，则，
-                - $\begin{bmatrix} A & C \\ O & B \end{bmatrix}$可逆，$\Leftrightarrow$$A,B$都可逆，且$\begin{bmatrix} A & C \\ O & B \end{bmatrix}^{-1} = \begin{bmatrix} A^{-1} & -A^{-1}CB^{-1} \\ O & B^{-1} \end{bmatrix}$
-                - $\begin{bmatrix} A & O \\ C & B \end{bmatrix}$可逆，$\Leftrightarrow$$A,B$都可逆，且$\begin{bmatrix} A & O \\ C & B \end{bmatrix}^{-1} = \begin{bmatrix} A^{-1} &O \\  -B^{-1}CA^{-1} & B^{-1} \end{bmatrix}$
-        - 对角分块矩阵
-            - 设$A_1, A_2, \dots, A_k$为==方阵==，则
-              
-                > 主对角线分块矩阵的逆矩阵，是主对角线上子块的逆矩阵
-                
-                - $\begin{bmatrix} A_1  \\ &A_2\\ && \ddots  \\ &&&A_k \end{bmatrix}$可逆，$\Leftrightarrow$$A_1, A_2, \dots, A_k$均可逆，且$\begin{bmatrix} A_1  \\ &A_2\\ && \ddots  \\ &&&A_k \end{bmatrix}^{-1} = \begin{bmatrix} A_1^{-1}  \\ &A_2^{-1}\\ && \ddots  \\ &&&A_k^{-1} \end{bmatrix}$
-                
-                > 副对角线分块矩阵的逆矩阵，是副对角线上子块的逆矩阵，但是要调转顺序
-                
-                - $\begin{bmatrix} &&&A_1  \\ &&A_2\\ & \dots \\ A_k \end{bmatrix}$可逆，$\Leftrightarrow$$A_1, A_2, \dots, A_k$均可逆，且$\begin{bmatrix} &&&A_1  \\ &&A_2\\ & \dots \\ A_k \end{bmatrix}^{-1} = \begin{bmatrix} &&&A_k^{-1} \\ && \dots\\ &A_2^{-1}   \\ A_1^{-1}  \end{bmatrix}$
-        
-    - 分块矩阵的行列式
-        - 设$A_1, A_2, \dots, A_k$为==方阵==，则
-            - $\begin{vmatrix}\begin{bmatrix} A_1 & * & \cdots & * \\ &A_2 & \cdots & *\\ && \ddots & \vdots \\ &&&A_k \end{bmatrix}\end{vmatrix} = |A_1| \bullet |A_2| \bullet  \cdots \bullet  |A_k| $
-            - $\begin{vmatrix}\begin{bmatrix} A_1  \\ * &A_2 \\ \vdots& \vdots& \ddots &  \\ *&*&\cdots&A_k \end{bmatrix}\end{vmatrix} = |A_1| \bullet |A_2| \bullet  \cdots \bullet  |A_k| $
-            - $\begin{vmatrix}\begin{bmatrix} A_1  \\ &A_2\\ && \ddots  \\ &&&A_k \end{bmatrix}\end{vmatrix} = |A_1| \bullet |A_2| \bullet  \cdots \bullet  |A_k| $
-        - 设$A$为$m$阶方阵，$B$为$n$阶方阵，则
-            - $\begin{vmatrix} \begin{bmatrix} O & A \\ B & C \end{bmatrix} \end{vmatrix} = (-1)^{mn}|A| \cdot |B|$
-            - $\begin{vmatrix} \begin{bmatrix} C & A \\ B & O \end{bmatrix} \end{vmatrix} = (-1)^{mn}|A| \cdot |B|$
-            - $\begin{vmatrix} \begin{bmatrix} O & A \\ B & O \end{bmatrix} \end{vmatrix} = (-1)^{mn}|A| \cdot |B|$
+        - $\begin{bmatrix} &&&A_1  \\ &&A_2\\ & \dots \\ A_k \end{bmatrix}$可逆，$\Leftrightarrow$$A_1, A_2, \dots, A_k$均可逆，且$\begin{bmatrix} &&&A_1  \\ &&A_2\\ & \dots \\ A_k \end{bmatrix}^{-1} = \begin{bmatrix} &&&A_k^{-1} \\ && \dots\\ &A_2^{-1}   \\ A_1^{-1}  \end{bmatrix}$
+
+### 13.2.5 分块矩阵的行列式
+- 设$A_1, A_2, \dots, A_k$为==方阵==，则
+    - $\begin{vmatrix}\begin{bmatrix} A_1 & * & \cdots & * \\ &A_2 & \cdots & *\\ && \ddots & \vdots \\ &&&A_k \end{bmatrix}\end{vmatrix} = |A_1| \bullet |A_2| \bullet  \cdots \bullet  |A_k| $
+    - $\begin{vmatrix}\begin{bmatrix} A_1  \\ * &A_2 \\ \vdots& \vdots& \ddots &  \\ *&*&\cdots&A_k \end{bmatrix}\end{vmatrix} = |A_1| \bullet |A_2| \bullet  \cdots \bullet  |A_k| $
+    - $\begin{vmatrix}\begin{bmatrix} A_1  \\ &A_2\\ && \ddots  \\ &&&A_k \end{bmatrix}\end{vmatrix} = |A_1| \bullet |A_2| \bullet  \cdots \bullet  |A_k| $
+- 设$A$为$m$阶方阵，$B$为$n$阶方阵，则
+    - $\begin{vmatrix} \begin{bmatrix} O & A \\ B & C \end{bmatrix} \end{vmatrix} = (-1)^{mn}|A| \cdot |B|$
+    - $\begin{vmatrix} \begin{bmatrix} C & A \\ B & O \end{bmatrix} \end{vmatrix} = (-1)^{mn}|A| \cdot |B|$
+    - $\begin{vmatrix} \begin{bmatrix} O & A \\ B & O \end{bmatrix} \end{vmatrix} = (-1)^{mn}|A| \cdot |B|$
 
 # 14. 矩阵的秩
 
-- 秩的定义
+## 14.1 秩的定义
 
-    - 矩阵的子式
+- 矩阵的子式
 
-        > 设矩阵$A = (a_{ij})_{mn}$，在$A$中任取$k$行$k$列（$k \le min(m,n)$），位于这些行列交叉点处的$k^2$个元素，按照他们在$A$中的相对位置不变，得到的$k$阶==行列式==，称为矩阵$A$的一个$k$阶子式
-        >
-        > - 一阶子式即为元素本身
-        > - 若$A$为$n$阶矩阵，则$A$的$n$阶子式即为$|A|$
+    > 设矩阵$A = (a_{ij})_{mn}$，在$A$中任取$k$行$k$列（$k \le min(m,n)$），位于这些行列交叉点处的$k^2$个元素，按照他们在$A$中的相对位置不变，得到的$k$阶==行列式==，称为矩阵$A$的一个$k$阶子式
+    >
+    > - 一阶子式即为元素本身
+    > - 若$A$为$n$阶矩阵，则$A$的$n$阶子式即为$|A|$
 
-    - 矩阵的秩
+- 矩阵的秩
 
-        > 矩阵$A$中，==非零子式的最高阶数==，称为矩阵$A$的秩，记作$r(A)$
-        >
-        > - 零矩阵没有非零子式，规定零矩阵的秩为$0$
-        > - 若$A \ne O$，则$r(A) \ge 1$
-        > - 对任意矩阵$A_{m \times n}$，有$0 \le r(A) \le min(m,n)$
-        >     - 不等式右侧其实说明了$r(A) \le m$， $r(A) \le n$
-        
-        > 设矩阵$A = (a_{ij})_{mn}$
-        >
-        > - 若$r(A) = min(m,n)$，则称矩阵$A$为满秩矩阵
-        >
-        >     - 若$r(A) = m$，称为行满秩矩阵
-        >
-        >     - 若$r(A) = n$，称为列满秩矩阵
-        >
-        > - 若$r(A) < min(m,n)$，则称矩阵$A$为降秩矩阵
-        
-        > 特别的，若$A$为$n$阶==方阵==，若$r(A) = n$，则称$A$为满秩矩阵，若$r(A) < n$，则称$A$为降秩矩阵
-        >
-        > 可通过定理推出，若$A$为$n$阶方阵
-        >
-        > - $A$满秩$\Leftrightarrow$$r(A)=n$ $\Leftrightarrow$ $|A| \ne 0$ $\Leftrightarrow$ $A$可逆 $\Leftrightarrow$ $A$为非奇异矩阵
-        > - $A$降秩$\Leftrightarrow$$r(A)<n$ $\Leftrightarrow$ $|A| = 0$ $\Leftrightarrow$ $A$不可逆 $\Leftrightarrow$ $A$为奇异矩阵
-
-- 矩阵的秩相关的结论
-
-    1. $r(A) = r(r >0) \Leftrightarrow$矩阵$A$中至少有一个$r$阶子式不等于零，而所有的$r+1$阶子式都为零，或者没有$r+1$阶子式
-
-        - 不仅仅$r+1$阶子全部为$0$，从$r+1, r+2, min(m,n)$的各阶子式其实都为$0$，如果存在的话
-
-            可以对$r+2$阶子式按照某行展开，则是各个元素乘以对应的$r+1$阶的代数余子式，但是已经$r+1$阶行列式全部为$0$，所以全部$r+2$阶子式也全部为$0$
-    2. $r(A) \ge r \Leftrightarrow$矩阵$A$中至少有一个$r$阶子式不等于零
-    3. $r(A) < r \Leftrightarrow$矩阵$A$中所有$r$阶子式都为零，其实是$r$阶以上的全部子式都为零
-    4. 转置矩阵，负矩阵，数乘矩阵的秩
-        1. $r(A) = r(A^T)$                     行列式转置，不影响行列式的值
-        2. $r(A) = r(-A)$                   $|A| = (-1)^k|A|$，如果$|A|=0$，$|-A|=0$，如果$|A| \ne 0$，$|-A| \ne 0$
-        3. $r(A) = r(kA)\; k \ne 0$         $|A|$和$|kA|$始终同时为$0$，或同时不为$0$
-    5. $r(A) = 0 \Leftrightarrow A = O;\; r(A) \ge 1 \Leftrightarrow A \ne O$ 
-    6. 若$A \ne O$，则$A$任意两行或两列成比例$\Leftrightarrow r(A) = 1$
-    7. 若$A$为行阶梯矩阵，则$r(A) = A\text{中非零行的行数}$
-    8. 初等变换不改变矩阵的秩，即若$A \cong B$，有$r(A) = r(B)$
-    9. 若$A,B$为同型矩阵，则$A \cong B \Leftrightarrow r(A) = r(B)$
-    10. 若$A$的标准型为$D = \begin{bmatrix} 1 \\ & \ddots \\ && 1 \\ &&& 0 \\ &&&& \ddots \\ &&&&& 0\end{bmatrix}$，则$r(A)$等于$D$中$1$的个数
-    11. 若$A,B$同为$m \times n $阶矩阵，则$r(A \pm B) \le r(A)+r(B)$
-    12. 若$A$为$m \times n$阶矩阵，$B$为$n \times s$阶矩阵，则$r(A) + r(B) \textcolor{red}{-n} \le r(AB) \le min(r(A), r(B))$
-
-         - 不等式右侧其实说明了$r(AB) \le r(A)$，$r(AB) \le r(B)$
-    13. 若$A$为$m \times n$阶矩阵，$B$为$n \times s$阶矩阵，且$AB = O$， 则$r(A) + r(B) \le n$
-    14. $r(A^TA) = r(AA^T) = r(A)=r(A^T)$
-    15. 若$A$为可逆方阵，则$r(AB) = r(B)\;\; r(CA) = r(C)$
-
-         - $A$可逆方阵，则可以表示为若干个初等矩阵的乘积，则$AB, CA$相当于对$B,C$做初等行/列变换
-         - 初等变换不改变矩阵的秩
-    16. 若$A$为$n$阶方阵$(n \ge 2)$，$A^{\ast}$为$A$的伴随矩阵，则$r(A^{\ast}) =\begin{cases} n, &r(A) = n \\ 1, &r(A)=n-1\\0,&r(A) < n-1\end{cases}$
-
-- 求解矩阵的秩
-
-    - 定义法
-
-        > 若矩阵$A$中有不等于零的$r$阶子式，且所有$r+1$阶子式都为零，或者没有$r+1$阶子式，则$r(A) = r$
-
-    - 初等变换法
-
-        > 利用矩阵的初等行变换，将矩阵化为行阶梯矩阵，则行阶梯矩阵中非零行的行数即为矩阵的秩
-        >
-        > 原理：初等变换不改变
-
-    - 行列式法
-
-        > 若$A$为$n$阶方阵，求$|A|$，若$\begin{cases} 若|A| \ne 0 & r(A) = n \\ 若|A| = 0 & r(A) < n \end{cases}$
-
-    - 利用矩阵秩的结论
+    > 矩阵$A$中，==非零子式的最高阶数==，称为矩阵$A$的秩，记作$r(A)$
+    >
+    > - 零矩阵没有非零子式，规定零矩阵的秩为$0$
+    > - 若$A \ne O$，则$r(A) \ge 1$
+    > - 对任意矩阵$A_{m \times n}$，有$0 \le r(A) \le min(m,n)$
+    >     - 不等式右侧其实说明了$r(A) \le m$， $r(A) \le n$
     
+    > 设矩阵$A = (a_{ij})_{mn}$
+    >
+    > - 若$r(A) = min(m,n)$，则称矩阵$A$为满秩矩阵
+    >
+    >     - 若$r(A) = m$，称为行满秩矩阵
+    >
+    >     - 若$r(A) = n$，称为列满秩矩阵
+    >
+    > - 若$r(A) < min(m,n)$，则称矩阵$A$为降秩矩阵
+    
+    > 特别的，若$A$为$n$阶==方阵==，若$r(A) = n$，则称$A$为满秩矩阵，若$r(A) < n$，则称$A$为降秩矩阵
+    >
+    > 可通过定理推出，若$A$为$n$阶方阵
+    >
+    > - $A$满秩$\Leftrightarrow$$r(A)=n$ $\Leftrightarrow$ $|A| \ne 0$ $\Leftrightarrow$ $A$可逆 $\Leftrightarrow$ $A$为非奇异矩阵
+    > - $A$降秩$\Leftrightarrow$$r(A)<n$ $\Leftrightarrow$ $|A| = 0$ $\Leftrightarrow$ $A$不可逆 $\Leftrightarrow$ $A$为奇异矩阵
+
+## 14.2  矩阵的秩相关的结论
+
+1. $r(A) = r(r >0) \Leftrightarrow$矩阵$A$中至少有一个$r$阶子式不等于零，而所有的$r+1$阶子式都为零，或者没有$r+1$阶子式
+
+    - 不仅仅$r+1$阶子全部为$0$，从$r+1, r+2, min(m,n)$的各阶子式其实都为$0$，如果存在的话
+
+        可以对$r+2$阶子式按照某行展开，则是各个元素乘以对应的$r+1$阶的代数余子式，但是已经$r+1$阶行列式全部为$0$，所以全部$r+2$阶子式也全部为$0$
+2. $r(A) \ge r \Leftrightarrow$矩阵$A$中至少有一个$r$阶子式不等于零
+3. $r(A) < r \Leftrightarrow$矩阵$A$中所有$r$阶子式都为零，其实是$r$阶以上的全部子式都为零
+4. 转置矩阵，负矩阵，数乘矩阵的秩
+    1. $r(A) = r(A^T)$                     行列式转置，不影响行列式的值
+    2. $r(A) = r(-A)$                   $|A| = (-1)^k|A|$，如果$|A|=0$，$|-A|=0$，如果$|A| \ne 0$，$|-A| \ne 0$
+    3. $r(A) = r(kA)\; k \ne 0$         $|A|$和$|kA|$始终同时为$0$，或同时不为$0$
+5. $r(A) = 0 \Leftrightarrow A = O;\; r(A) \ge 1 \Leftrightarrow A \ne O$ 
+6. 若$A \ne O$，则$A$任意两行或两列成比例$\Leftrightarrow r(A) = 1$
+7. 若$A$为行阶梯矩阵，则$r(A) = A\text{中非零行的行数}$
+8. 初等变换不改变矩阵的秩，即若$A \cong B$，有$r(A) = r(B)$
+9. 若$A,B$为同型矩阵，则$A \cong B \Leftrightarrow r(A) = r(B)$
+10. 若$A$的标准型为$D = \begin{bmatrix} 1 \\ & \ddots \\ && 1 \\ &&& 0 \\ &&&& \ddots \\ &&&&& 0\end{bmatrix}$，则$r(A)$等于$D$中$1$的个数
+11. 若$A,B$同为$m \times n $阶矩阵，则$r(A \pm B) \le r(A)+r(B)$
+12. 若$A$为$m \times n$阶矩阵，$B$为$n \times s$阶矩阵，则$r(A) + r(B) \textcolor{red}{-n} \le r(AB) \le min(r(A), r(B))$
+
+     - 不等式右侧其实说明了$r(AB) \le r(A)$，$r(AB) \le r(B)$
+13. 若$A$为$m \times n$阶矩阵，$B$为$n \times s$阶矩阵，且$AB = O$， 则$r(A) + r(B) \le n$
+14. $r(A^TA) = r(AA^T) = r(A)=r(A^T)$
+15. 若$A$为可逆方阵，则$r(AB) = r(B)\;\; r(CA) = r(C)$
+
+     - $A$可逆方阵，则可以表示为若干个初等矩阵的乘积，则$AB, CA$相当于对$B,C$做初等行/列变换
+     - 初等变换不改变矩阵的秩
+16. 若$A$为$n$阶方阵$(n \ge 2)$，$A^{\ast}$为$A$的伴随矩阵，则$r(A^{\ast}) =\begin{cases} n, &r(A) = n \\ 1, &r(A)=n-1\\0,&r(A) < n-1\end{cases}$
+
+## 14.3 求解矩阵的秩
+
+- 定义法
+
+    > 若矩阵$A$中有不等于零的$r$阶子式，且所有$r+1$阶子式都为零，或者没有$r+1$阶子式，则$r(A) = r$
+
+- 初等变换法
+
+    > 利用矩阵的初等行变换，将矩阵化为行阶梯矩阵，则行阶梯矩阵中非零行的行数即为矩阵的秩
+    >
+    > 原理：初等变换不改变
+
+- 行列式法
+
+    > 若$A$为$n$阶方阵，求$|A|$，若$\begin{cases} 若|A| \ne 0 & r(A) = n \\ 若|A| = 0 & r(A) < n \end{cases}$
+
+- 利用矩阵秩的结论
 
 
 
